@@ -6,6 +6,16 @@
 		<meta name="description" content="Personal portfolio page of Jan Janiczek">
 		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
 		<style>
+		/* font credit: Tom Anders Watkins https://www.behance.net/gallery/18068463/Anders-(Free-Font) */
+		@font-face {
+    		font-family: 'Anders';
+    		font-weight: 200;
+    		font-style: normal;
+    		src: local('Anders'),
+         		 url('Anders.woff2') format('woff2'),
+         		 url('Anders.woff') format('woff'),
+         		 url('Anders.ttf') format('truetype');
+		}
 		body {
 			margin: 0 auto;
 			font-family: -apple-system, BlinkMacSystemFont, 
@@ -30,16 +40,19 @@
 			color: white;
 			font-weight: bold;
 			font-size: 1.25rem;
+			font-family: Anders, sans-serif;
 			display: inline-block;
 			vertical-align: middle;
 			padding: 1rem 4%;
 		}
 		#logo {
+			position: relative;
 			font-size: 2.5rem;
 			padding: 0% 4%;
 			font-family: sans-serif;
 			letter-spacing: -0.7rem;
 			color: #40c48f;
+			top: -0.25rem;
 		}
 		#first {
 			color: #7f0000;
