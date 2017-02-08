@@ -24,6 +24,7 @@
     			"Droid Sans", "Helvetica Neue", sans-serif;
   			font-weight: 300;
   			font-size: 1rem;
+  			overflow: auto;
 		}
 		nav {
 			position: fixed;
@@ -34,7 +35,8 @@
 		nav ul {
 			text-align: center;
 			vertical-align: middle;
-			margin: 0px;
+			margin: 0 auto;
+			padding: 0px;
 		}
 		nav ul li {
 			color: white;
@@ -64,6 +66,11 @@
 			background-image: linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
 			-webkit-background-clip: text;
   			background-clip: text;
+		}
+		@media (max-width: 740px) {
+			#logo {
+				display: none;
+			}
 		}
 		</style>
 		<title>Jan Janiczek</title>
