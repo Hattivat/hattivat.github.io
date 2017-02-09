@@ -23,14 +23,15 @@
     			"Ubuntu", "Cantarell", "Fira Sans", 
     			"Droid Sans", "Helvetica Neue", sans-serif;
   			font-weight: 300;
-  			font-size: 1rem;
-  			overflow: auto;
+  			font-size: 100%;
 		}
+
+		/* NAVBAR */
 		nav {
 			position: fixed;
-			vertical-align: middle;
 			width: 100%;
 			background-color: black;
+			z-index: 2;
 		}
 		nav ul {
 			text-align: center;
@@ -58,6 +59,7 @@
 		}
 		#first {
 			color: #7f0000;
+			font-size: 2.5rem;
 		}
 		.grad {
 			color: transparent;
@@ -67,9 +69,110 @@
 			-webkit-background-clip: text;
   			background-clip: text;
 		}
-		@media (max-width: 740px) {
+		@media (max-width: 46rem) {
 			#logo {
 				display: none;
+			}
+		}
+
+		/* HEADER */
+		header.main {
+			background-color: #ffeecc;
+			width: 100%;
+			position: relative;
+			padding-top: 3.65rem
+		}
+		.center {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+		#welcome {
+			display: inline;
+			font-family: Anders, sans-serif;
+			color: #7f0000;
+			padding: 1rem 2rem;
+			text-align: center;
+			vertical-align: center;
+		}
+		#welcome h1 {
+			font-size: 2.5rem;
+			font-weight: inherit;
+			margin: 0px;
+			vertical-align: center;
+		}
+		#welcome p {
+			font-size: 1.25rem;
+			margin: 0px;
+			vertical-align: center;
+		}
+		.slideshow {
+			display: inline;
+		}
+		.slideshow img {
+			position: absolute;
+			max-width: 432px;
+			height: auto;
+			padding: 0% 5%;
+		}
+		.slideshow img:nth-child(6) {
+			visibility: hidden;
+			max-width: 432px;
+			height: auto;
+			position: static;
+			padding: 0% 5%;
+			z-index: 0;
+		}
+		@keyframes xfade{
+ 			0%{
+    			opacity: 1;
+  			}
+  			20% {
+    			opacity:1;
+  			}
+  			23.3% {
+    			opacity:0;
+  			}
+  			96.7% {
+    			opacity:0;
+  			}
+  			100% {
+    			opacity:1;
+  			}
+		}
+		.slideshow img:nth-child(5) {
+			animation: xfade 10s 0s infinite;
+		}
+		.slideshow img:nth-child(4) {
+			animation: xfade 10s 2s infinite;
+		}
+		.slideshow img:nth-child(3) {
+			animation: xfade 10s 4s infinite;
+		}
+		.slideshow img:nth-child(2) {
+			animation: xfade 10s 6s infinite;
+		}
+		.slideshow img:nth-child(1) {
+			animation: xfade 10s 8s infinite;
+		}
+		@media (max-width: 39.5rem) {
+			header.main {
+				padding-top: 7.3rem;
+			}
+		}
+		@media (max-width: 30rem) {
+			.slideshow img {
+				max-width: 100%;
+				padding: 0px;
+			}
+		}
+		@media (max-width: 21rem) {
+			#welcome {
+				font-size: 1rem;
+			}
+			#upper {
+				font-size: 2rem;
 			}
 		}
 		</style>
@@ -78,10 +181,36 @@
 	<body lang="en-US">
 		<nav>
 			<ul>
-				<li><a href="#" class="grad">ABOUT ME</a></li>
 				<li><a href="#" class="grad">PROJECTS</a></li>
-				<li id="logo"><span id="first">J</span>J</li>
 				<li><a href="#" class="grad">SKILLS</a></li>
+				<li id="logo"><span id="first">J</span>J</li>
+				<li><a href="#" class="grad">ABOUT ME</a></li>
 				<li><a href="#" class="grad">CONTACT</a></li>
 			</ul>
 		</nav>
+		<header class="main">
+			<div class="center">
+				<section id="welcome">
+					<h1>Hi. I'm Jan</h1>
+					<p>an aspiring full–stack developer</p>
+				</section>
+				<div class="slideshow">
+					<img src="http://i.imgur.com/rZhkhrr.png">
+					<img src="http://i.imgur.com/sIEez76.png">
+					<img src="http://i.imgur.com/sZH1Fn0.png">
+					<img src="http://i.imgur.com/st44sZV.png">
+					<img src="http://i.imgur.com/iYvBVVT.png">
+					<img src="http://i.imgur.com/iYvBVVT.png">
+				</div>
+			</div>
+		</header>
+		<section id="projects">
+		</section>
+		<section id="skills">
+		</section>
+		<section id="about me">
+		</section>
+		<section id="contact">
+		</section>
+	</body>
+</html>
