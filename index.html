@@ -5,6 +5,7 @@
 		<meta name="author" content="Jan Janiczek">
 		<meta name="description" content="Personal portfolio page of Jan Janiczek">
 		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
+		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 		<style>
 		/* font credit: Tom Anders Watkins https://www.behance.net/gallery/18068463/Anders-(Free-Font) */
 		@font-face {
@@ -31,7 +32,7 @@
 			position: fixed;
 			width: 100%;
 			background-color: black;
-			z-index: 2;
+			z-index: 3;
 		}
 		nav ul {
 			text-align: center;
@@ -88,7 +89,7 @@
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
-			padding: 2%;
+			padding: 3rem 2rem 5rem 2rem;
 		}
 		#welcome {
 			font-family: Anders, sans-serif;
@@ -98,18 +99,26 @@
 			vertical-align: center;
 		}
 		#welcome h1 {
-			font-size: 2.5rem;
+			font-size: 3.5rem;
 			font-weight: inherit;
 			margin: 0px;
 			vertical-align: center;
 		}
 		#welcome p {
-			font-size: 1.25rem;
+			font-size: 1.75rem;
 			margin: 0px;
 			vertical-align: center;
 		}
 		.slideshow {
 			padding: 0rem 4rem;
+		}
+		.slideshow i {
+			position: absolute;
+			font-size: 460px;
+			margin-left: -460px;
+			margin-top: -35px;
+			z-index: 2;
+			color: #333333;
 		}
 		.slideshow img {
 			position: absolute;
@@ -156,21 +165,47 @@
 		.slideshow img:nth-child(1) {
 			animation: xfade 10s 8s infinite;
 		}
+		@media (max-width: 48rem) {
+			#welcome h1 {
+				font-size: 3rem;
+			}
+			#welcome p {
+				font-size: 1.5rem;
+			}
+		}
 		@media (max-width: 39.5rem) {
 			header.main {
 				padding-top: 7.3rem;
 			}
+			#welcome h1 {
+				font-size: 2.5rem;
+			}
+			#welcome p {
+				font-size: 1.25rem;
+			}
 		}
 		@media (max-width: 30rem) {
-			.slideshow img {
-				max-width: 100%;
+			.center {
+				padding: 0%;
+			}
+			#welcome {
+				padding: 1rem 2rem;
+			}
+			#welcome h1 {
+				font-size: 2.25rem;
+			}
+			#welcome p {
+				font-size: 1.125rem;
+			}
+			.slideshow {
+				display: none;
 			}
 		}
 		@media (max-width: 21rem) {
-			#welcome {
+			#welcome p {
 				font-size: 1rem;
 			}
-			#upper {
+			#welcome h1 {
 				font-size: 2rem;
 			}
 		}
@@ -200,6 +235,7 @@
 					<img src="http://i.imgur.com/st44sZV.png">
 					<img src="http://i.imgur.com/iYvBVVT.png">
 					<img src="http://i.imgur.com/iYvBVVT.png">
+					<i class="fa fa-television"></i>
 				</div>
 			</div>
 		</header>
