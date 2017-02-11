@@ -5,6 +5,7 @@
 		<meta name="author" content="Jan Janiczek">
 		<meta name="description" content="Strona poświęcona pamięci prof. Romana Janiczka, zasłużonego polskiego elektrotechnika">
 		<meta name="keywords" content="energetyka, politechnika śląska, wydział elektryczny, pse, janiczek">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:300|Roboto:300" rel="stylesheet">
 		<style>
 			html {
   				text-align: center;
@@ -12,8 +13,7 @@
     			"Segoe UI", "Roboto", "Oxygen", 
     			"Ubuntu", "Cantarell", "Fira Sans", 
     			"Droid Sans", "Helvetica Neue", sans-serif;
-  				font-weight: 300;
-  				font-size: 1rem;
+  				font-size: 100%;
   				color: #444444;
   				overflow: auto;
 			}
@@ -27,7 +27,8 @@
 			#biography {
   				display: table;
   				margin: 0 auto;
-  				line-height: 1.35;
+  				line-height: 1.75rem;
+  				font-family: "Open Sans", "Ubuntu", "Segoe UI", "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 			}
 			#main p {
 				text-align: justify;
@@ -35,22 +36,19 @@
 			img {
   				border-radius: 15%;
   				border: 5px solid white;
-  				margin-top: 20px;
-  				margin-bottom: 20px;
+  				margin-top: 3rem;
+  				margin-bottom: 3rem;
   				max-width: 90%;
   				height: auto;
 			}
 			li {
-  				line-height: 1.5;
+  				line-height: 1.75;
   				list-style-type: none;
 			}
 			.title {
-  				margin-bottom: 10px;
   				text-align: center;
   				font-weight: normal;
-  				font-size: 1.5rem;
-  				text-decoration: underline;
-			}
+  			}
 			.link-list {
   				display: table;
   				margin: 0 auto;
@@ -60,18 +58,35 @@
   				margin-top: 0px;
   				padding-top: 0px;
 			}
+			h1, h2, h3, h4 {
+  				font-weight: normal;
+  				font-family: "Merriweather", serif;
+			}
 			h1 {
   				font-size: 3rem;
   				margin-bottom: 0px;
-
 			}
-			h1, h2, h4 {
-  				font-weight: normal;
+			h2 {
+				font-size: 2rem;
+			}
+			h3 {
+				font-size: 1.5rem;
+				margin-top: 0.65rem;
+				margin-bottom: 0px;
+			}
+			h4 {
+				margin-bottom: 1.25rem;
+				font-size: 1.5rem;
+			}
+			blockquote {
+				margin: 50px;
 			}
 			blockquote p {
   				text-align: left;
   				font-size: 1.25rem;
-  				margin-bottom: 10px;
+  				margin-bottom: 0.65rem;
+  				line-height: 1.75rem;
+  				font-family: "Roboto", "Segoe UI", "Noto Sans", -apple-system, BlinkMacSystemFont, sans-serif;
 			}
 			footer {
   				color: #636c72;
@@ -80,6 +95,15 @@
 			@media (max-width: 720px) {
 				#main {
 					margin: 0% 10%;
+				}
+				blockquote {
+					margin: 50px 35px;
+				}
+				h1 {
+					font-size: 2.5rem;
+				}
+				h3 {
+					font-size: 1.4rem;
 				}
 			}
 			@media (max-width: 480px) {
@@ -90,7 +114,13 @@
 					text-align: left
 				}
 				blockquote {
-					margin: 20px;
+					margin: 50px 20px;
+				}
+				h1 {
+					font-size: 2.25rem;
+				}
+				h3 {
+					font-size: 1.3rem;
 				}
 			}
 			@media (max-width: 360px) {
@@ -98,7 +128,22 @@
 					margin: 0% 2%;
 				}
 				blockquote {
-					margin: 0px;
+					margin: 40px 0px;
+				}
+				blockquote p {
+					font-size: 1rem;
+				}
+				h2 {
+					font-size: 1.75rem;
+				}
+				h3 {
+					font-size: 1.2rem;
+				}
+				h4 {
+					font-size: 1.25rem;
+				}
+				li {
+					font-size: 0.9rem;
 				}
 			}
 		</style>
@@ -107,10 +152,10 @@
 	<body>
 		<div id="main">
 			<h1>prof. Roman Janiczek</h1>
-			<h2><em>elektrotechnik, wykładowca, dyrektor</em></h2>
+			<h3><em>elektrotechnik, wykładowca, dyrektor</em></h2>
 			<img src="./rjaniczek.jpg">
 			<section id="biography">
-  				<h4 class="title">Życiorys</h4>
+  				<h2 class="title">Życiorys</h4>
   				<p>Roman Janiczek urodził się 21 września 1939 roku jako trzecie dziecko Jana Janiczka i Haliny Janiczek, z domu Krechowicz. Jego matka była nauczycielką wyróżniającą się znajomością trzech języków obcych, ojciec zaś oficerem Wojska Polskiego w stopniu kapitana, służącym jako dowódca kompanii w 1 batalionie 1 Pułku Strzelców Podhalańskich, przydzielonym do obrony wschodniej Małopolski. Po prawie dwóch tygodniach oporu wobec wielokrotnie liczniejszych sił nieprzyjacielskich, oddział został rozbity, zaś Jan Janiczek dostał się do niemieckiej niewoli. Jako oficer przetrzymywany był w obozie jenieckim, oflagu Lubeka Gross-Born, gdzie spędził całą resztę wojny. Pomimo bycia w zaawansowanej ciąży, w obliczu niemieckiej agresji Halina Janiczek zdecydowała się uciekać z Nowego Sącza do Lwowa, w kierunku którego wycofywać się miały oddziały Armii Karpaty, w tym jej maż. Niestety, niedługo po jej przybyciu do wschodniej Polski wkroczyły oddziały sowieckie, kładąc kres wojskowemu planowi obrony na "przedmościu rumuńskim". W obliczu załamania się sytuacji ucieczka na Lwowszczyznę traciła sens, toteż Halina wyruszyła z dziećmi (Bogusław miał wówczas 4 lata, a Ewa 2 lata) w powrotną drogę do Nowego Sącza. To w pociągu na tej trasie, pośród chaosu dobijanej właśnie II RP, urodził się 21 września Roman, choć w dokumentach zapisano mu jako miejsce urodzenia Brzeżany, siedzibę Ośrodka Zapasowego 21 Dywizji Piechoty (w skład której wchodził 1 Pułk Strzelców Podhalańskich) i oficjalne miejsce rozlokowania ojca.</p>
   				<p>Po powrocie do Małopolski Halina Janiczek szybko włączyła się w ruch oporu. W maju 1942 roku jako członkinię AK aresztowało ją Gestapo. Początkowo przetrzymywana była w areszcie krakowskiej placówki Gestapo, następnie w sierpniu 1942 roku przeniesiono do obozu koncentracyjnego w Oświęcimiu, gdzie zmarła w marcu 1943 roku, niecałe trzy lata po śmierci swojego ojca, pułkownika Dionizego Krechowicza, lekarza wojskowego i komendanta 3 szpitala okręgowego w Grodnie, zamordowanego przez Sowietów w Starobielsku. Osamotnionymi dziećmi zaopiekowała się ciotka Józefa i jej mąż, którzy wychowali je i zastąpili im rodziców. Jan Janiczek został wyzwolony przez alianckie wojska w 1945 roku i znalazł się we Włoszech. W obliczu przejęcia władzy w Polsce przez komunistów, i za namową własnej matki, zdecydował się nie wracać do Polski. Ożenił się ponownie z Franciszką, Żydówką ocalałą z obozu w Ravensbrück, i wraz z nią wyemigrował do Brazylii, gdzie bez większych sukcesów trudnił się przedsiębiorczością. Polskę mógł ponownie odwiedzić dopiero w 1957 roku. Podczas swojej ostatniej wizyty w ojczyźnie w 1989 roku zmarł i spoczął na cmentarzu w Gdańsku.</p>
   				<p>Przybrani rodzice rodzeństwa zamieszkali po wojnie w Kędzierzynie-Koźlu. Swoim podopiecznym wpoili pracowitość i pomogli się wykształcić. Cała trójka ukończyła studia - Bogusław budownictwo, Ewa medycynę, a Roman energetykę na Wydziale Elektrycznym Politechniki Śląskiej. Po ukończeniu studiów w 1962 roku Roman rozpoczął pracę zawodową w Elektrowni Zabrze na stanowisku dyżurnego inżyniera ruchu. W tym czasie poznał również swoją żonę Marię, z domu Knieć, i osiadł z nią w Gliwicach. Urodziła im się dwójka synów - Grzegorz i Szymon. W 1965 z inicjatywy prof. Lucjana Nehrebeckiego podjął pracę na Politechnice Śląskiej, w Katedrze Elektrowni, równolegle pracując w ZBPE Energopomiar oraz Elektrowni Rybnik. W roku 1968 obronił pracę doktorską <em>Ekonomiczne aspekty pracy szczytowej konwencjonalnych elektrowni parowych</em>, zrealizowaną pod kierunkiem prof. Nehrebeckiego. Następnie pracował w Instytucie Energetyki, a po powstaniu Instytutu Elektroenergetyki i Sterowania w 1971 roku, w tymże instytucie, jako kierownik Zespołu Elektrowni i Gospodarki Elektroenergetycznej. Ponadto w latach 1973-1975 był prodziekanem ds. nauki Wydziału Elektrycznego. Na tyle, na ile pozwalały na to ówczesne warunki polityczne i finansowe, podróżował z rodziną, spędzając pamiętne wakacje m.in. w Grecji i Abchazji. W roku 1979 uzyskał stopień doktora habilitowanego za rozprawę <em>Zasady planowania i projektowania elektrowni parowych w ujęciu systemowym</em>. W 1985 roku pełnił obowiązki dziekana Wydziału Elektrycznego. W tym samym roku w uznaniu dorobku dydaktyczno-naukowego otrzymał tytuł profesora nauk technicznych.</p>
