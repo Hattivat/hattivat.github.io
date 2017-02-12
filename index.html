@@ -6,6 +6,7 @@
 		<meta name="description" content="Personal portfolio page of Jan Janiczek">
 		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
 		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya|EB+Garamond|Inconsolata|Josefin+Sans:400, 700|Josefin+Slab|Lato|Merriweather:300|Noto+Sans|Open+Sans|Playfair+Display|Raleway|Roboto|Ubuntu" rel="stylesheet">
 		<style>
 		/* font credit: Tom Anders Watkins https://www.behance.net/gallery/18068463/Anders-(Free-Font) */
 		@font-face {
@@ -53,8 +54,9 @@
 			position: relative;
 			font-size: 2.5rem;
 			padding: 0% 4%;
-			font-family: "Segoe UI";
-			letter-spacing: -0.7rem;
+			font-family: "Josefin Sans", sans-serif;
+			font-weight: 700;
+			letter-spacing: -0.5rem;
 			color: #40c48f;
 			top: -0.25rem;
 		}
@@ -78,7 +80,7 @@
 
 		/* HEADER */
 		header.main {
-			background-color: #ffeecc;
+			background-color: #FFF4DE;
 			width: 100%;
 			position: relative;
 			padding-top: 3.65rem
@@ -92,25 +94,24 @@
 			padding: 3rem 2rem 5rem 2rem;
 		}
 		#welcome {
-			font-family: Anders, sans-serif;
 			color: #7f0000;
-			padding: 2rem 4rem;
+			padding: 0px;
+			margin: 0rem 4rem 1rem 4rem;
 			text-align: center;
 			vertical-align: center;
 		}
 		#welcome h1 {
-			font-size: 3.5rem;
-			font-weight: inherit;
+			font-size: 4rem;
+			font-family: "Josefin Sans", sans-serif;
+			font-weight: 700;
 			margin: 0px;
 			vertical-align: center;
 		}
 		#welcome p {
 			font-size: 1.75rem;
+			font-family: "Inconsolata", monospace;
 			margin: 0px;
 			vertical-align: center;
-		}
-		#comma {
-			font-family: sans-serif;
 		}
 		.slideshow {
 			padding: 0rem 4rem;
@@ -121,19 +122,20 @@
 			height: auto;
 			padding: 0%;
 		}
-		.slideshow img:nth-child(6) {
+		.slideshow img:nth-child(7) {
 			visibility: hidden;
 			width: 432px;
 			height: auto;
 			position: static;
 			padding: 0%;
 		}
-		.slideshow img:nth-child(7) {
+		.slideshow img:nth-child(6) {
 			position: absolute;
 			width: 460px;
 			height: 460px;
-			margin-left: -445px;
-			margin-top: -10px;
+			padding: 0%;
+			margin-left: -14px;
+			margin-top: -14px;
 			z-index: 2;
 		}
 		@keyframes xfade{
@@ -168,48 +170,51 @@
 		.slideshow img:nth-child(1) {
 			animation: xfade 10s 8s infinite;
 		}
-		@media (max-width: 48rem) {
+		@media (max-width: 1220px) {
+			#welcome {
+				margin: 0rem 4rem 5rem 4rem;
+			}
+		}
+		@media (max-width: 617px) {
+			header.main {
+				padding-top: 7.3rem;
+			}
+			#welcome {
+				margin: 0rem 2rem 5rem 2rem;
+			}
 			#welcome h1 {
-				font-size: 3rem;
+				font-size: 3.5rem;
 			}
 			#welcome p {
 				font-size: 1.5rem;
 			}
-		}
-		@media (max-width: 39.5rem) {
-			header.main {
-				padding-top: 7.3rem;
-			}
-			#welcome h1 {
-				font-size: 2.5rem;
-			}
-			#welcome p {
-				font-size: 1.25rem;
+			.slideshow {
+				padding: 0rem;
 			}
 		}
-		@media (max-width: 30rem) {
+		@media (max-width: 480px) {
 			.center {
-				padding: 0%;
+				padding: 2rem 0rem 3rem 0rem;
 			}
 			#welcome {
-				padding: 1rem 2rem;
+				margin: 0rem 2rem;
 			}
 			#welcome h1 {
-				font-size: 2.25rem;
+				font-size: 3rem;
 			}
 			#welcome p {
-				font-size: 1.125rem;
+				font-size: 1.375rem;
 			}
 			.slideshow {
 				display: none;
 			}
 		}
-		@media (max-width: 21rem) {
+		@media (max-width: 360px) {
 			#welcome p {
-				font-size: 1rem;
+				font-size: 1.25rem;
 			}
 			#welcome h1 {
-				font-size: 2rem;
+				font-size: 2.5rem;
 			}
 		}
 
@@ -240,7 +245,7 @@
 		<header class="main">
 			<div class="center">
 				<section id="welcome">
-					<h1>Hi<span id="comma">,</span> I'm Jan</h1>
+					<h1>Hi, I'm Jan</h1>
 					<p>an aspiring full–stack developer</p>
 				</section>
 				<div class="slideshow">
@@ -249,8 +254,8 @@
 					<img src="http://i.imgur.com/sZH1Fn0.png">
 					<img src="http://i.imgur.com/st44sZV.png">
 					<img src="http://i.imgur.com/iYvBVVT.png">
-					<img src="http://i.imgur.com/iYvBVVT.png">
 					<img src="./monitor.png">
+					<img src="http://i.imgur.com/iYvBVVT.png">
 				</div>
 			</div>
 		</header>
