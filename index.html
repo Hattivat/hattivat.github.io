@@ -6,7 +6,7 @@
 		<meta name="description" content="Personal portfolio page of Jan Janiczek">
 		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
 		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Alegreya|EB+Garamond|Inconsolata|Josefin+Sans:400, 700|Josefin+Slab|Lato|Merriweather:300|Noto+Sans|Open+Sans|Playfair+Display|Raleway|Roboto|Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400|Raleway|Ubuntu:300" rel="stylesheet">
 		<style>
 		/* font credit: Tom Anders Watkins https://www.behance.net/gallery/18068463/Anders-(Free-Font) */
 		@font-face {
@@ -20,10 +20,10 @@
 		}
 		body {
 			margin: 0 auto;
-			font-family: -apple-system, BlinkMacSystemFont, 
+			/* font-family: -apple-system, BlinkMacSystemFont, 
     			"Segoe UI", "Roboto", "Oxygen", 
     			"Ubuntu", "Cantarell", "Fira Sans", 
-    			"Droid Sans", "Helvetica Neue", sans-serif;
+    			"Droid Sans", "Helvetica Neue", sans-serif; */
   			font-weight: 300;
   			font-size: 100%;
 		}
@@ -54,11 +54,10 @@
 			position: relative;
 			font-size: 2.5rem;
 			padding: 0% 4%;
-			font-family: "Josefin Sans", sans-serif;
+			font-family: "Lato", sans-serif;
 			font-weight: 700;
-			letter-spacing: -0.5rem;
+			letter-spacing: -0.8rem;
 			color: #40c48f;
-			top: -0.25rem;
 		}
 		#first {
 			color: #7f0000;
@@ -80,7 +79,7 @@
 
 		/* HEADER */
 		header.main {
-			background-color: #FFF4DE;
+			background-color: #F2F2F2;
 			width: 100%;
 			position: relative;
 			padding-top: 3.65rem
@@ -102,14 +101,14 @@
 		}
 		#welcome h1 {
 			font-size: 4rem;
-			font-family: "Josefin Sans", sans-serif;
+			font-family: "Raleway", sans-serif;
 			font-weight: 700;
 			margin: 0px;
 			vertical-align: center;
 		}
 		#welcome p {
 			font-size: 1.75rem;
-			font-family: "Inconsolata", monospace;
+			font-family: "Ubuntu", sans-serif;
 			margin: 0px;
 			vertical-align: center;
 		}
@@ -219,15 +218,43 @@
 		}
 
 		/* PROJECTS SECTION */
-		#projects {
+		.section-container {
 			text-align: center;
+			padding: 5rem;
+		}
+		.section-title {
+			font-size: 3rem;
+			font-family: "Raleway", sans-serif;
+			font-weight: 700;
+			color: #35373c;
+			margin: 0px;
+		}
+		.section-subtitle {
+			font-size: 1.25rem;
+			font-family: "Ubuntu";
 		}
 		#projectbox {
 			display: flex;
-			max-width: 1200px;
-			margin: 0 auto;
 			justify-content: center;
 			align-items: center;
+			flex-wrap: wrap;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 2rem;
+		}
+		#portfolio-item {
+			margin: 2rem;
+			display: block;
+			position: relative;
+		}
+		#portfolio-item img {
+			position: relative;
+			max-width: 300px;
+			padding: 0;
+			margin: 0;
+		}
+		#hidden-info {
+			position: absolute;
 		}
 		</style>
 		<title>Jan Janiczek</title>
@@ -259,33 +286,79 @@
 				</div>
 			</div>
 		</header>
-		<section id="projects">
-			<h1>Example projects</h1>
-			<p>I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
+		<section class="section-container">
+			<h1 class="section-title">Example projects</h1>
+			<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
 			<div id="projectbox">
-				<a href="https://github.com/Hattivat/hattivat.github.io"><div id="portfolio">
+				<a href="https://github.com/Hattivat/hattivat.github.io"><div class="portfolio-item">
 					<img src="#">
-					<h4>This website</h4>
-					<p>I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
-					<p>technologies: HTML5, CSS3, RWD</p>
+					<div class="hidden-info">
+						<h4 class="subsection-title">This website</h4>
+						<p>I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
+						<p>technologies: HTML5, CSS3, RWD</p>
+					</div>
 				</div></a>
-				<a href="https://github.com/Hattivat/PAPER"><div id="paper">
+				<a href="https://github.com/Hattivat/PAPER"><div class="portfolio-item">
 					<img src="#">
-					<h4>PAPER</h4>
-					<p>A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
-					<p>technologies: Python, MS Outlook API, Qt</p>
+					<div class="hidden-info">
+						<h4 class="subsection-title">PAPER</h4>
+						<p>A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
+						<p>technologies: Python, MS Outlook API, Qt</p>
+					</div>
 				</div></a>
-				<a href="./roman_janiczek.html"><div id="grandpa">
-					<img src="#">
-					<h4>Roman Janiczek</h4>
-					<p>A tribute page to my late granddad, prof. Roman Janiczek. Intentionally minimalistic, but nonetheless designed with responsiveness in mind.</p>
-					<p>technologies: HTML, CSS</p>
+				<a href="./roman_janiczek.html"><div class="portfolio-item">
+					<img src="./rjan.png">
+					<div class="hidden-info">
+						<h4 class="subsection-title">Roman Janiczek</h4>
+						<p>A tribute page to my late granddad, prof. Roman Janiczek. Intentionally minimalistic, but nonetheless designed with responsiveness in mind.</p>
+						<p>technologies: HTML, CSS</p>
+					</div>
 				</div></a>
 			</div>
 		</section>
-		<section id="skills">
+		<section class="section-container">
+			<h1 class="section-title">My skills</h1>
+			<p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
+			<div id="skillbox">
+				<div class="subsection">
+					<h4 class="subsection-title">Python</h4>
+					<p>Standard library</p>
+					<p>Django</p>
+					<p>Scipy</p>
+					<p>PyQt</p>
+				</div>
+				<div class="subsection">
+					<h4 class="subsection-title">Javascript</h4>
+					<p>Standard library</p>
+					<p>jQuery</p>
+					<p>AngularJS</p>
+					<p>React.js</p>
+				</div>
+				<div class="subsection">
+					<h4 class="subsection-title">Front-end</h4>
+					<p>HTML5</p>
+					<p>CSS3</p>
+					<p>Bootstrap</p>
+					<p>RWD</p>
+				</div>
+				<div class="subsection">
+					<h4 class="subsection-title">Back-end</h4>
+					<p>SQL</p>
+					<p>Object-oriented programming</p>
+					<p>Functional programming</p>
+					<p>Linux</p>
+				</div>
+				<div class="subsection">
+					<h4 class="subsection-title">
+					<p>PowerShell</p>
+					<p>Active Directory</p>
+					<p>
+				</div>
+			</div>
 		</section>
-		<section id="about me">
+		<section class="section-container">
+			<h1 class="section-title">About me</p>
+				<p>
 		</section>
 		<section id="contact">
 		</section>
