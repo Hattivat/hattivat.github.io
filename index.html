@@ -170,6 +170,82 @@
 		.slideshow img:nth-child(1) {
 			animation: xfade 10s 8s infinite;
 		}
+
+		/* GENERAL BODY STYLING */
+		.section-container {
+			text-align: center;
+			padding: 5rem 0rem;
+		}
+		.section-container header {
+			padding: 0rem 5rem;
+		}
+		.section-title {
+			font-size: 3rem;
+			font-family: "Raleway", sans-serif;
+			font-weight: 700;
+			margin: 0px;
+		}
+		.section-subtitle {
+			font-size: 1.25rem;
+			font-family: "Ubuntu";
+		}
+		.displaybox {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: top;
+			flex-wrap: wrap;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 2rem 0rem;
+		}
+		.box-item {
+			margin: 2rem;
+			padding: 0;
+			position: relative;
+			max-width: 300px;
+		}
+		.box-item h4 {
+			font-family: "Ubuntu", sans-serif;
+			margin: 0.5rem;
+			color: #35373c;
+		}
+		.box-item p {
+			font-family: "Lato", sans-serif;
+			margin: 0.5rem;
+			color: #35373c;
+		}
+
+		/* PROJECTS SECTION */
+		.box-item img {
+			width: 100%;
+			height: auto;
+			max-height: 300px;
+			padding: 0;
+			margin: 0;
+		}
+		.hidden-info {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			text-decoration: none;
+			text-align: left;
+			opacity: 0;
+			transition: all 1s;
+		}
+		.hidden-info:hover {
+			opacity: 1;
+		}
+
+		/* SKILLS SECTION */
+		#skills {
+			color: #40c48f;
+			background-color: #d8f3e8;
+		}
+
+		/* MEDIA QUERIES */
 		@media (max-width: 1220px) {
 			#welcome {
 				margin: 0rem 4rem 5rem 4rem;
@@ -191,6 +267,15 @@
 			.slideshow {
 				padding: 0rem;
 			}
+			.section-title {
+				font-size: 2.5rem;
+			}
+			.section-subtitle {
+				font-size: 1.125rem;
+			}
+			.section-container header {
+				padding: 0rem 3rem;
+			}
 		}
 		@media (max-width: 480px) {
 			.center {
@@ -206,7 +291,29 @@
 				font-size: 1.375rem;
 			}
 			.slideshow {
+				padding: 2rem 0rem 0rem 0rem;
+				width: 100%;
+			}
+			.slideshow img, .slideshow img:nth-child(7) {
+				width: 100%;
+			}
+			.slideshow img:nth-child(6) {
 				display: none;
+			}
+			.section-title {
+				font-size: 2rem;
+			}
+			.section-subtitle {
+				font-size: 1rem;
+			}
+			.section-container header {
+				padding: 0rem 1rem;
+			}
+			.displaybox {
+				padding: 0rem;
+			}
+			.section-container {
+				padding: 3rem 0rem;
 			}
 		}
 		@media (max-width: 360px) {
@@ -216,77 +323,12 @@
 			#welcome h1 {
 				font-size: 2.5rem;
 			}
-		}
-
-		/* GENERAL BODY STYLING */
-		.section-container {
-			text-align: center;
-			padding: 5rem;
-		}
-		.section-title {
-			font-size: 3rem;
-			font-family: "Raleway", sans-serif;
-			font-weight: 700;
-			margin: 0px;
-		}
-		.section-subtitle {
-			font-size: 1.25rem;
-			font-family: "Ubuntu";
-		}
-		.displaybox {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 2rem;
-		}
-
-		/* PROJECTS SECTION */
-		.portfolio-item {
-			margin: 2rem;
-			padding: 0;
-			position: relative;
-			max-width: 300px;
-		}
-		.portfolio-item img {
-			width: 100%;
-			height: auto;
-			max-height: 300px;
-			padding: 0;
-			margin: 0;
-		}
-		.hidden-info {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			right: 0px;
-			bottom: 0px;
-			text-decoration: none;
-			text-align: left;
-			opacity: 0;
-			transition: all 1s;
-		}
-		.hidden-info:hover {
-			opacity: 1;
-		}
-		.mini-title {
-			font-family: "Ubuntu", sans-serif;
-			margin: 0.5rem;
-			color: #35373c;
-		}
-		.mini-p {
-			font-family: "Lato", sans-serif;
-			margin: 0.5rem;
-			color: #35373c;
-		}
-
-		/* SKILLS SECTION */
-		#skills {
-			color: #40c48f;
-			background-color: #d8f3e8;
+			.section-title {
+				font-size: 1.75rem;
+			}
+			.section-subtitle {
+				font-size: 0.9rem;
+			}
 		}
 		</style>
 		<title>Jan Janiczek</title>
@@ -324,28 +366,28 @@
 				<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
 			</header>
 			<div class="displaybox">
-				<div class="portfolio-item">
+				<div class="box-item">
 					<img src="./rjan.png">
 					<a class="hidden-info" href="https://github.com/Hattivat/hattivat.github.io">
-						<h4 class="mini-title">This website</h4>
-						<p class="mini-p">I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
-						<p class="mini-p"><i class="fa fa-cogs" aria-hidden="true"></i> HTML5, CSS3, RWD</p>
+						<h4>This website</h4>
+						<p>I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
+						<p><i class="fa fa-cogs" aria-hidden="true"></i> HTML5, CSS3, RWD</p>
 					</a>
 				</div>
-				<div class="portfolio-item">
+				<div class="box-item">
 					<img src="./rjan.png">
 					<a class="hidden-info" href="https://github.com/Hattivat/PAPER">
-						<h4 class="mini-title">PAPER</h4>
-						<p class="mini-p">A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
-						<p class="mini-p"><i class="fa fa-cogs" aria-hidden="true"></i> Python, MS Outlook API, Qt</p>
+						<h4>PAPER</h4>
+						<p>A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
+						<p><i class="fa fa-cogs" aria-hidden="true"></i> Python, MS Outlook API, Qt</p>
 					</a>
 				</div>
-				<div class="portfolio-item">
+				<div class="box-item">
 					<img src="./rjan.png">
 					<a class="hidden-info" href="./roman_janiczek.html">
-						<h4 class="mini-title">Roman Janiczek</h4>
-						<p class="mini-p">A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.</p>
-						<p class="mini-p"><i class="fa fa-cogs" aria-hidden="true"></i> HTML, CSS</p>
+						<h4>Roman Janiczek</h4>
+						<p>A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.</p>
+						<p><i class="fa fa-cogs" aria-hidden="true"></i> HTML, CSS</p>
 					</a>
 				</div>
 			</div>
@@ -356,39 +398,38 @@
 				<p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
 			</header>
 			<div class="displaybox">
-				<div class="subsection">
-					<h4 class="mini-title">Python</h4>
+				<div class="box-item">
+					<h4>Python</h4>
 					<p>Standard library</p>
 					<p>Django</p>
 					<p>Scipy</p>
 					<p>PyQt</p>
 				</div>
-				<div class="subsection">
-					<h4 class="mini-title">Javascript</h4>
+				<div class="box-item">
+					<h4>Javascript</h4>
 					<p>Standard library</p>
 					<p>jQuery</p>
 					<p>AngularJS</p>
 					<p>React.js</p>
 				</div>
-				<div class="subsection">
-					<h4 class="mini-title">Front-end</h4>
+				<div class="box-item">
+					<h4>Front-end</h4>
 					<p>HTML5</p>
 					<p>CSS3</p>
 					<p>Bootstrap</p>
 					<p>RWD</p>
 				</div>
-				<div class="subsection">
-					<h4 class="mini-title">Back-end</h4>
+				<div class="box-item">
+					<h4>Back-end</h4>
 					<p>SQL</p>
 					<p>Object-oriented programming</p>
 					<p>Functional programming</p>
 					<p>Linux</p>
 				</div>
-				<div class="subsection">
-					<h4 class="mini-title">
+				<div class="box-item">
+					<h4>Other</h4>
 					<p>PowerShell</p>
 					<p>Active Directory</p>
-					<p>
 				</div>
 			</div>
 		</section>
