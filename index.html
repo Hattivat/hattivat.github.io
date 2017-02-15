@@ -26,6 +26,7 @@
     			"Droid Sans", "Helvetica Neue", sans-serif; */
   			font-weight: 300;
   			font-size: 100%;
+  			color: #35373c;
 		}
 
 		/* NAVBAR */
@@ -217,7 +218,7 @@
 			}
 		}
 
-		/* PROJECTS SECTION */
+		/* GENERAL BODY STYLING */
 		.section-container {
 			text-align: center;
 			padding: 5rem;
@@ -226,15 +227,15 @@
 			font-size: 3rem;
 			font-family: "Raleway", sans-serif;
 			font-weight: 700;
-			color: #35373c;
 			margin: 0px;
 		}
 		.section-subtitle {
 			font-size: 1.25rem;
 			font-family: "Ubuntu";
 		}
-		.projectbox {
+		.displaybox {
 			display: flex;
+			flex-direction: row;
 			justify-content: center;
 			align-items: center;
 			flex-wrap: wrap;
@@ -242,20 +243,50 @@
 			margin: 0 auto;
 			padding: 2rem;
 		}
+
+		/* PROJECTS SECTION */
 		.portfolio-item {
 			margin: 2rem;
-			display: block;
+			padding: 0;
 			position: relative;
 			max-width: 300px;
 		}
 		.portfolio-item img {
-			position: relative;
 			width: 100%;
+			height: auto;
+			max-height: 300px;
 			padding: 0;
 			margin: 0;
 		}
 		.hidden-info {
 			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			text-decoration: none;
+			text-align: left;
+			opacity: 0;
+			transition: all 1s;
+		}
+		.hidden-info:hover {
+			opacity: 1;
+		}
+		.mini-title {
+			font-family: "Ubuntu", sans-serif;
+			margin: 0.5rem;
+			color: #35373c;
+		}
+		.mini-p {
+			font-family: "Lato", sans-serif;
+			margin: 0.5rem;
+			color: #35373c;
+		}
+
+		/* SKILLS SECTION */
+		#skills {
+			color: #40c48f;
+			background-color: #d8f3e8;
 		}
 		</style>
 		<title>Jan Janiczek</title>
@@ -288,69 +319,73 @@
 			</div>
 		</header>
 		<section class="section-container" id="projects">
-			<h1 class="section-title">Example projects</h1>
-			<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
-			<div id="projectbox">
-				<a href="https://github.com/Hattivat/hattivat.github.io"><div class="portfolio-item">
-					<img src="#">
-					<div class="hidden-info">
-						<h4 class="subsection-title">This website</h4>
-						<p>I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
-						<p>technologies: HTML5, CSS3, RWD</p>
-					</div>
-				</div></a>
-				<a href="https://github.com/Hattivat/PAPER"><div class="portfolio-item">
-					<img src="#">
-					<div class="hidden-info">
-						<h4 class="subsection-title">PAPER</h4>
-						<p>A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
-						<p>technologies: Python, MS Outlook API, Qt</p>
-					</div>
-				</div></a>
-				<a href="./roman_janiczek.html"><div class="portfolio-item">
+			<header>
+				<h1 class="section-title">Example projects</h1>
+				<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
+			</header>
+			<div class="displaybox">
+				<div class="portfolio-item">
 					<img src="./rjan.png">
-					<div class="hidden-info">
-						<h4 class="subsection-title">Roman Janiczek</h4>
-						<p>A tribute page to my late granddad, prof. Roman Janiczek. Intentionally minimalistic, but nonetheless designed with responsiveness in mind.</p>
-						<p>technologies: HTML, CSS</p>
-					</div>
-				</div></a>
+					<a class="hidden-info" href="https://github.com/Hattivat/hattivat.github.io">
+						<h4 class="mini-title">This website</h4>
+						<p class="mini-p">I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
+						<p class="mini-p"><i class="fa fa-cogs" aria-hidden="true"></i> HTML5, CSS3, RWD</p>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<img src="./rjan.png">
+					<a class="hidden-info" href="https://github.com/Hattivat/PAPER">
+						<h4 class="mini-title">PAPER</h4>
+						<p class="mini-p">A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
+						<p class="mini-p"><i class="fa fa-cogs" aria-hidden="true"></i> Python, MS Outlook API, Qt</p>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<img src="./rjan.png">
+					<a class="hidden-info" href="./roman_janiczek.html">
+						<h4 class="mini-title">Roman Janiczek</h4>
+						<p class="mini-p">A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.</p>
+						<p class="mini-p"><i class="fa fa-cogs" aria-hidden="true"></i> HTML, CSS</p>
+					</a>
+				</div>
 			</div>
 		</section>
 		<section class="section-container" id="skills">
-			<h1 class="section-title">My skills</h1>
-			<p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
-			<div id="skillbox">
+			<header>
+				<h1 class="section-title">My skills</h1>
+				<p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
+			</header>
+			<div class="displaybox">
 				<div class="subsection">
-					<h4 class="subsection-title">Python</h4>
+					<h4 class="mini-title">Python</h4>
 					<p>Standard library</p>
 					<p>Django</p>
 					<p>Scipy</p>
 					<p>PyQt</p>
 				</div>
 				<div class="subsection">
-					<h4 class="subsection-title">Javascript</h4>
+					<h4 class="mini-title">Javascript</h4>
 					<p>Standard library</p>
 					<p>jQuery</p>
 					<p>AngularJS</p>
 					<p>React.js</p>
 				</div>
 				<div class="subsection">
-					<h4 class="subsection-title">Front-end</h4>
+					<h4 class="mini-title">Front-end</h4>
 					<p>HTML5</p>
 					<p>CSS3</p>
 					<p>Bootstrap</p>
 					<p>RWD</p>
 				</div>
 				<div class="subsection">
-					<h4 class="subsection-title">Back-end</h4>
+					<h4 class="mini-title">Back-end</h4>
 					<p>SQL</p>
 					<p>Object-oriented programming</p>
 					<p>Functional programming</p>
 					<p>Linux</p>
 				</div>
 				<div class="subsection">
-					<h4 class="subsection-title">
+					<h4 class="mini-title">
 					<p>PowerShell</p>
 					<p>Active Directory</p>
 					<p>
@@ -358,10 +393,14 @@
 			</div>
 		</section>
 		<section class="section-container" id="about-me">
-			<h1 class="section-title">About me</p>
+			<header>
+				<h1 class="section-title">About me</p>
+			</header>
 		</section>
 		<section class="section-container" id="contact">
-			<h1 class="section-title">Contact</p>
+			<header>
+				<h1 class="section-title">Contact</p>
+			</header>
 		</section>
 	</body>
 </html>
