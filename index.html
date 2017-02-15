@@ -233,7 +233,7 @@
 			font-size: 1.25rem;
 			font-family: "Ubuntu";
 		}
-		#projectbox {
+		.projectbox {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -242,18 +242,19 @@
 			margin: 0 auto;
 			padding: 2rem;
 		}
-		#portfolio-item {
+		.portfolio-item {
 			margin: 2rem;
 			display: block;
 			position: relative;
-		}
-		#portfolio-item img {
-			position: relative;
 			max-width: 300px;
+		}
+		.portfolio-item img {
+			position: relative;
+			width: 100%;
 			padding: 0;
 			margin: 0;
 		}
-		#hidden-info {
+		.hidden-info {
 			position: absolute;
 		}
 		</style>
@@ -286,7 +287,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="section-container">
+		<section class="section-container" id="projects">
 			<h1 class="section-title">Example projects</h1>
 			<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
 			<div id="projectbox">
