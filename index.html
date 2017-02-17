@@ -5,334 +5,9 @@
 		<meta name="author" content="Jan Janiczek">
 		<meta name="description" content="Personal portfolio page of Jan Janiczek">
 		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
+		<link rel="stylesheet" href="./janiczek.css">
 		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300" rel="stylesheet">
-		<style>
-		/* font credit: Tom Anders Watkins https://www.behance.net/gallery/18068463/Anders-(Free-Font) */
-		@font-face {
-    		font-family: 'Anders';
-    		font-weight: 200;
-    		font-style: normal;
-    		src: local('Anders'),
-         		 url('Anders.woff2') format('woff2'),
-         		 url('Anders.woff') format('woff'),
-         		 url('Anders.ttf') format('truetype');
-		}
-		body {
-			margin: 0 auto;
-			/* font-family: -apple-system, BlinkMacSystemFont, 
-    			"Segoe UI", "Roboto", "Oxygen", 
-    			"Ubuntu", "Cantarell", "Fira Sans", 
-    			"Droid Sans", "Helvetica Neue", sans-serif; */
-  			font-weight: 300;
-  			font-size: 100%;
-  			color: #35373c;
-		}
-
-		/* NAVBAR */
-		nav {
-			position: fixed;
-			width: 100%;
-			background-color: black;
-			z-index: 3;
-		}
-		nav ul {
-			text-align: center;
-			vertical-align: middle;
-			margin: 0 auto;
-			padding: 0px;
-		}
-		nav ul li {
-			color: white;
-			font-weight: bold;
-			font-size: 1.25rem;
-			font-family: Anders, sans-serif;
-			display: inline-block;
-			vertical-align: middle;
-			padding: 1rem 4%;
-		}
-		#logo {
-			position: relative;
-			font-size: 2.5rem;
-			padding: 0% 4%;
-			margin-top: -0.3rem;
-			font-family: "Droid Sans", sans-serif;
-			font-weight: 700;
-			letter-spacing: -0.6rem;
-			color: #40c48f;
-		}
-		#first {
-			color: #7f0000;
-			font-size: 2.5rem;
-		}
-		.grad {
-			color: transparent;
-			background-color: white; /* if gradient unsupported */
-		/*	background-image: linear-gradient(to right, #52f2b2, #094741); */
-			background-image: linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
-			-webkit-background-clip: text;
-  			background-clip: text;
-		}
-		@media (max-width: 740px) {
-			#logo {
-				display: none;
-			}
-		}
-
-		/* HEADER */
-		header.main {
-			background-color: #F2F2F2;
-			width: 100%;
-			position: relative;
-			padding-top: 3.65rem
-		}
-		.center {
-			margin: 0 auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-wrap: wrap;
-			padding: 3rem 2rem 5rem 2rem;
-		}
-		#welcome {
-			color: #7f0000;
-			padding: 0px;
-			margin: 0rem 4rem 1rem 4rem;
-			text-align: center;
-			vertical-align: center;
-		}
-		#welcome h1 {
-			font-size: 4rem;
-			font-family: "Raleway", sans-serif;
-			font-weight: 700;
-			margin: 0px;
-			vertical-align: center;
-		}
-		#welcome p {
-			font-size: 1.75rem;
-			font-family: "Ubuntu", sans-serif;
-			margin: 0px;
-			vertical-align: center;
-		}
-		.slideshow {
-			padding: 0rem 4rem;
-		}
-		.slideshow img {
-			position: absolute;
-			width: 432px;
-			height: auto;
-			padding: 0%;
-		}
-		.slideshow img:nth-child(7) {
-			visibility: hidden;
-			width: 432px;
-			height: auto;
-			position: static;
-			padding: 0%;
-		}
-		.slideshow img:nth-child(6) {
-			position: absolute;
-			width: 460px;
-			height: 460px;
-			padding: 0%;
-			margin-left: -14px;
-			margin-top: -14px;
-			z-index: 2;
-		}
-		@keyframes xfade{
- 			0%{
-    			opacity: 1;
-  			}
-  			20% {
-    			opacity:1;
-  			}
-  			23.3% {
-    			opacity:0;
-  			}
-  			96.7% {
-    			opacity:0;
-  			}
-  			100% {
-    			opacity:1;
-  			}
-		}
-		.slideshow img:nth-child(5) {
-			animation: xfade 10s 0s infinite;
-		}
-		.slideshow img:nth-child(4) {
-			animation: xfade 10s 2s infinite;
-		}
-		.slideshow img:nth-child(3) {
-			animation: xfade 10s 4s infinite;
-		}
-		.slideshow img:nth-child(2) {
-			animation: xfade 10s 6s infinite;
-		}
-		.slideshow img:nth-child(1) {
-			animation: xfade 10s 8s infinite;
-		}
-
-		/* GENERAL BODY STYLING */
-		.section-container {
-			text-align: center;
-			padding: 5rem 0rem;
-		}
-		.section-container header {
-			padding: 0rem 5rem;
-		}
-		.section-title {
-			font-size: 3rem;
-			font-family: "Raleway", sans-serif;
-			font-weight: 700;
-			margin: 0px;
-		}
-		.section-subtitle {
-			font-size: 1.25rem;
-			font-family: "Ubuntu", sans-serif;
-		}
-		.displaybox {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: top;
-			flex-wrap: wrap;
-			max-width: 1200px;
-			margin: 0 auto;
-			padding: 2rem 0rem;
-		}
-		.box-item {
-			margin: 2rem;
-			padding: 0;
-			position: relative;
-			max-width: 300px;
-		}
-		.box-item h4 {
-			font-family: "Ubuntu", sans-serif;
-			font-size: 1.25rem;
-			margin: 0.5rem;
-			color: #35373c;
-		}
-		.box-item p {
-			font-family: "Droid Sans", sans-serif;
-			margin: 0.5rem;
-			color: #35373c;
-		}
-
-		/* PROJECTS SECTION */
-		.box-item img {
-			width: 100%;
-			height: auto;
-			max-height: 300px;
-			padding: 0;
-			margin: 0;
-		}
-		.hidden-info {
-			position: absolute;
-			top: 0px;
-			left: 0px;
-			right: 0px;
-			bottom: 0px;
-			text-decoration: none;
-			text-align: left;
-			opacity: 0;
-			transition: all 1s;
-		}
-		.hidden-info:hover {
-			opacity: 1;
-		}
-
-		/* SKILLS SECTION */
-		#skills {
-			color: #40c48f;
-			background-color: #d8f3e8;
-		}
-
-		/* MEDIA QUERIES */
-		@media (max-width: 1220px) {
-			#welcome {
-				margin: 0rem 4rem 5rem 4rem;
-			}
-		}
-		@media (max-width: 617px) {
-			header.main {
-				padding-top: 7.3rem;
-			}
-			#welcome {
-				margin: 0rem 2rem 5rem 2rem;
-			}
-			#welcome h1 {
-				font-size: 3.5rem;
-			}
-			#welcome p {
-				font-size: 1.5rem;
-			}
-			.slideshow {
-				padding: 0rem;
-			}
-			.section-title {
-				font-size: 2.5rem;
-			}
-			.section-subtitle {
-				font-size: 1.125rem;
-			}
-			.section-container header {
-				padding: 0rem 3rem;
-			}
-		}
-		@media (max-width: 480px) {
-			.center {
-				padding: 2rem 0rem 3rem 0rem;
-			}
-			#welcome {
-				margin: 0rem 2rem;
-			}
-			#welcome h1 {
-				font-size: 3rem;
-			}
-			#welcome p {
-				font-size: 1.375rem;
-			}
-			.slideshow {
-				padding: 2rem 0rem 0rem 0rem;
-				width: 100%;
-			}
-			.slideshow img, .slideshow img:nth-child(7) {
-				width: 100%;
-			}
-			.slideshow img:nth-child(6) {
-				display: none;
-			}
-			.section-title {
-				font-size: 2rem;
-			}
-			.section-subtitle {
-				font-size: 1rem;
-			}
-			.section-container header {
-				padding: 0rem 1rem;
-			}
-			.displaybox {
-				padding: 0rem;
-			}
-			.section-container {
-				padding: 3rem 0rem;
-			}
-		}
-		@media (max-width: 360px) {
-			#welcome p {
-				font-size: 1.25rem;
-			}
-			#welcome h1 {
-				font-size: 2.5rem;
-			}
-			.section-title {
-				font-size: 1.75rem;
-			}
-			.section-subtitle {
-				font-size: 0.9rem;
-			}
-		}
-		</style>
 		<title>Jan Janiczek</title>
 	</head>
 	<body lang="en-US">
@@ -357,7 +32,7 @@
 					<img src="http://i.imgur.com/sZH1Fn0.png">
 					<img src="http://i.imgur.com/st44sZV.png">
 					<img src="http://i.imgur.com/iYvBVVT.png">
-					<img src="./monitor.png">
+					<img src="./assets//monitor.png">
 					<img src="http://i.imgur.com/iYvBVVT.png">
 				</div>
 			</div>
@@ -369,7 +44,7 @@
 			</header>
 			<div class="displaybox">
 				<div class="box-item">
-					<img src="./rjan.png">
+					<img src="./assets/rjan.png">
 					<a class="hidden-info" href="https://github.com/Hattivat/hattivat.github.io">
 						<h4>This website</h4>
 						<p>I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
@@ -377,7 +52,7 @@
 					</a>
 				</div>
 				<div class="box-item">
-					<img src="./rjan.png">
+					<img src="./assets/rjan.png">
 					<a class="hidden-info" href="https://github.com/Hattivat/PAPER">
 						<h4>PAPER</h4>
 						<p>A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
@@ -385,7 +60,7 @@
 					</a>
 				</div>
 				<div class="box-item">
-					<img src="./rjan.png">
+					<img src="./assets/rjan.png">
 					<a class="hidden-info" href="./roman_janiczek.html">
 						<h4>Roman Janiczek</h4>
 						<p>A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.</p>
@@ -411,8 +86,8 @@
 					<h4>Javascript</h4>
 					<p>Standard library</p>
 					<p>jQuery</p>
-					<p>AngularJS</p>
-					<p>React.js</p>
+					<p>Angular</p>
+					<p>React</p>
 				</div>
 				<div class="box-item">
 					<h4>Front-end</h4>
@@ -440,7 +115,7 @@
 		<section class="section-container" id="about-me">
 			<header>
 				<h1 class="section-title">About me</h1>
-				<p class="section-subtitle">My name is Jan Janiczek, and I hold a combined "human languages plus computer science fundamentals" (Linguistics and Information Science) BA degree from the Adam Mickiewicz University in Poznań. Following graduation, I spent two years as a freelance English-Polish translator, culminating in the publication of an RPG sourcebook entirely translated by me. Disappointed by the career prospects of, and perhaps more importantly, the lack of employer respect for, translators in my country, I have decided to make use of the Computer-Science-related part of my degree. I have joined the Access Management team in the IT Security Support division of GlaxoSmithKline as a trainee, and spent 18 months working there, putting into practical use my knowledge of SQL and Python, and learning to use PowerShell and Active Directory. Although I enjoyed working in the multi-national environment of GSK, when my apprenticeship ended I decided use my savings to take time off work to further develop my skills and graduate from a hobby coder to a professional developer. The following 6 months were a period of intense study, the highlights of which I discuss below.</p>
+				<p class="long-text">My name is Jan Janiczek, and I hold a combined "human languages plus computer science fundamentals" (Linguistics and Information Science) BA degree from the Adam Mickiewicz University in Poznań. Following graduation, I spent two years as a freelance English-Polish translator, culminating in the publication of an RPG sourcebook entirely translated by me. Disappointed by the career prospects of, and perhaps more importantly, the lack of employer respect for, translators in my country, I decided to make use of the Computer-Science-related part of my degree. I hjoined the Access Management team in the IT Security Support division of GlaxoSmithKline as a trainee, and spent 18 months working there, putting into practical use my knowledge of SQL and Python, and learning to use PowerShell and Active Directory. Although I enjoyed working in the multi-national environment of GSK, when my apprenticeship ended I decided use my savings to take time off work to further develop my skills and graduate from a hobby coder to a professional developer. The following 6 months were a period of intense study, the highlights of which I discuss below.</p>
 			</header>
 		</section>
 		<section class="section-container" id="contact">
