@@ -177,6 +177,12 @@ header.main {
 	font-weight: 700;
 	margin: 0px;
 }
+.subsection-title {
+	font-size: 1.75rem;
+	font-family: "Raleway", sans-serif;
+	font-weight: normal;
+	width: 100%;
+}
 .section-subtitle {
 	font-size: 1.25rem;
 	font-family: "Ubuntu", sans-serif;
@@ -202,6 +208,9 @@ header.main {
 	position: relative;
 	max-width: 300px;
 }
+.box-item:hover {
+	transform: translateY(-5px);
+}
 .box-item h4 {
 	font-family: "Ubuntu", sans-serif;
 	font-size: 1.25rem;
@@ -212,6 +221,9 @@ header.main {
 	font-family: "Droid Sans", sans-serif;
 	margin: 0.5rem;
 	color: #35373c;
+}
+.shadowed {
+	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* PROJECTS SECTION */
@@ -242,6 +254,54 @@ header.main {
 	color: #40c48f;
 	background-color: #d8f3e8;
 }
+/* based on http://www.cssscript.com/animated-circular-progress-bar-using-svg-path-animation/ */
+@keyframes load{ 0% {
+	stroke-dashoffset:0
+	}
+}
+.circle {
+	display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #93A2AC;
+    font-family: "Droid Sans", sans-serif;
+    margin: 2rem;
+}
+.circle:before {
+	content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+}
+.circle:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+svg {
+	width: 10rem;
+	height: 10rem;
+	stroke: #003306;
+}
+svg:nth-child(2) {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: rotate(-90deg);
+}
+svg:nth-child(2) path {
+	fill: none;
+    stroke-width: 14;
+    stroke-dasharray: 629;
+    stroke: #fff;
+    opacity: 0.9;
+    animation: load 10s;
+}
+/* TODO: turn the above into a scroll-triggered animation */
 
 /* SCROLL ANIMATIONS */
 .scroll-animated {
@@ -252,14 +312,19 @@ header.main {
 	opacity: 1;
 }
 .scroll-animated.left-slide {
-	transform: translateX(-250px);
+	transform: translateX(-200px);
 }
 .scroll-animated.right-slide {
-	transform: translateX(250px);
+	transform: translateX(200px);
 }
 .scroll-animated.left-slide.visible, .scroll-animated.right-slide.visible {
 	transform: translateX(0px);
-	opacity: 1;
+}
+.scroll-animated.bounce-up {
+	transform: translateY(100px);
+}
+.scroll-animated.bounce-up.visible {
+	transform: translateY(0px);
 }
 
 /* MEDIA QUERIES */
