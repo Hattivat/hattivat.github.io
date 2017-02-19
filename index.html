@@ -7,26 +7,27 @@
 		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
 		<link rel="stylesheet" href="./janiczek.css">
 		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300">
+		<script src="./assets/jquery-3.1.1.min.js"></script>
 		<title>Jan Janiczek</title>
 	</head>
 	<body lang="en-US">
 		<nav>
 			<ul>
-				<li><a href="#projects" class="grad">PROJECTS</a></li>
-				<li><a href="#skills" class="grad">SKILLS</a></li>
+				<a href="#projects"><li class="grad">PROJECTS</li></a>
+				<a href="#skills"><li class="grad">SKILLS</li></a>
 				<li id="logo"><span id="first">J</span>J</li>
-				<li><a href="#about-me" class="grad">ABOUT ME</a></li>
-				<li><a href="#contact" class="grad">CONTACT</a></li>
+				<a href="#about-me"><li class="grad">ABOUT ME</li></a>
+				<a href="#contact"><li class="grad">CONTACT</li></a>
 			</ul>
 		</nav>
 		<header class="main">
 			<div class="center">
-				<section id="welcome">
+				<section id="welcome" class="scroll-animated left-slide">
 					<h1>Hi, I'm Jan</h1>
 					<p>an aspiring full–stack developer</p>
 				</section>
-				<div class="slideshow">
+				<div class="slideshow scroll-animated right-slide" data-aos="fade-left">
 					<img src="http://i.imgur.com/rZhkhrr.png">
 					<img src="http://i.imgur.com/sIEez76.png">
 					<img src="http://i.imgur.com/sZH1Fn0.png">
@@ -47,8 +48,8 @@
 					<img src="./assets/rjan.png">
 					<a class="hidden-info" href="https://github.com/Hattivat/hattivat.github.io">
 						<h4>This website</h4>
-						<p>I leveraged advanced CSS3 features to create a fully responsive website without having to use any lower-performance Javascript code.</p>
-						<p><i class="fa fa-cogs" aria-hidden="true"></i> HTML5, CSS3, RWD</p>
+						<p>Responsive, and taking full advantage of CSS3 feautures to minimize the use of lower-performance JS code</p>
+						<p><i class="fa fa-cogs" aria-hidden="true"></i> HTML5, CSS3, jQuery</p>
 					</a>
 				</div>
 				<div class="box-item">
@@ -124,4 +125,5 @@
 			</header>
 		</section>
 	</body>
+	<script src="./janiczek.js"></script>
 </html>
