@@ -299,32 +299,39 @@ svg:nth-child(2) path {
     stroke-dasharray: 629;
     stroke: #fff;
     opacity: 0.9;
-    animation: load 10s;
 }
 /* TODO: turn the above into a scroll-triggered animation */
 
 /* SCROLL ANIMATIONS */
 .scroll-animated {
 	opacity: 0;
-	transition: all 1s linear;
 }
 .scroll-animated.visible {
 	opacity: 1;
 }
 .scroll-animated.left-slide {
 	transform: translateX(-200px);
+	transition: all 1s linear;
 }
 .scroll-animated.right-slide {
 	transform: translateX(200px);
+	transition: all 1s linear;
 }
 .scroll-animated.left-slide.visible, .scroll-animated.right-slide.visible {
 	transform: translateX(0px);
 }
 .scroll-animated.bounce-up {
 	transform: translateY(100px);
+	transition: all 1s linear;
 }
 .scroll-animated.bounce-up.visible {
 	transform: translateY(0px);
+}
+.scroll-animated.circle-load svg:nth-child(2) path { /* this trickery is necessary because svg-s have position:absolute */
+	animation: none;
+}
+.scroll-animated.circle-load.visible svg:nth-child(2) path {
+	animation: load 10s;
 }
 
 /* MEDIA QUERIES */
