@@ -17,8 +17,6 @@ var full_refresh = function() {
 
 		if ((top <= win_bottom) && (bottom >= win_top)) {
 			$element.addClass('visible');
-		} else {
-			$element.removeClass('visible');
 		}
 	});
 };
@@ -33,8 +31,6 @@ var small_refresh = function() {
 		var bottom = $element.attr('data-bottom');
 		if ((top <= win_bottom) && (bottom >= win_top)) {
 			$element.addClass('visible');
-		} else {
-			$element.removeClass('visible');
 		}
 	});
 };
