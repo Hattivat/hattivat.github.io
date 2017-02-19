@@ -300,7 +300,6 @@ svg:nth-child(2) path {
     stroke: #fff;
     opacity: 0.9;
 }
-/* TODO: turn the above into a scroll-triggered animation */
 
 /* SCROLL ANIMATIONS */
 .scroll-animated {
