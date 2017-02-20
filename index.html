@@ -81,7 +81,7 @@
 			{% for skillset in site.data.skills %}
 			<div class="displaybox">
 				<h2 class="subsection-title">{{ skillset[0] }}</h2>
-				{% for skill in skillset %}
+				{% for skill in skillset[1] %}
 				<div class="circle scroll-animated circle-load" data-name="{{ skill[0] }}" data-percent="{{ skill[1] }}%">
 					<svg viewBox="-10 -10 220 220">
 						<g fill="none" stroke-width="12" transform="translate(100,100)">
