@@ -1,0 +1,20 @@
+{
+	"This website": {
+		"url": "https://github.com/Hattivat/hattivat.github.io",
+		"description": "Responsive, and taking full advantage of CSS3 feautures to minimize the use of lower-performance JS code.",
+		"technologies": "HTML5, CSS3, jQuery",
+		"image": "./assets/rjan.png"
+	},
+	"PAPER": {
+		"url": "https://github.com/Hattivat/PAPER",
+		"description": "A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.",
+		"technologies": "Python, MS Outlook API, Qt",
+		"image": "./assets/rjan.png"
+	},
+	"Roman Janiczek": {
+		"url": "./roman_janiczek.html",
+		"description": "A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.",
+		"technologies": "HTML, CSS",
+		"image": "./assets/rjan.png"
+	}
+}

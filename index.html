@@ -47,30 +47,16 @@
 				<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
 			</header>
 			<div class="displaybox scroll-animated bounce-up">
+				{% for project in site.data.projects %}
 				<div class="box-item shadowed">
-					<img src="./assets/rjan.png" alt="project screenshot">
-					<a class="hidden-info" href="https://github.com/Hattivat/hattivat.github.io" target="_blank">
-						<h4>This website</h4>
-						<p>Responsive, and taking full advantage of CSS3 feautures to minimize the use of lower-performance JS code</p>
-						<p><i class="fa fa-cogs" aria-hidden="true"></i> HTML5, CSS3, jQuery</p>
+					<img src="{{ project[1].image }}" alt="project screenshot">
+					<a class="hidden-info" href="{{ project[1].url }}" target="_blank">
+						<h4>{{ project[0] }}</h4>
+						<p>{{ project[1].description }}</p>
+						<p><i class="fa fa-cogs" aria-hidden="true"></i> {{ project[1].technologies }}</p>
 					</a>
 				</div>
-				<div class="box-item shadowed">
-					<img src="./assets/rjan.png" alt="project screenshot">
-					<a class="hidden-info" href="https://github.com/Hattivat/PAPER" target="_blank">
-						<h4>PAPER</h4>
-						<p>A tool to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.</p>
-						<p><i class="fa fa-cogs" aria-hidden="true"></i> Python, MS Outlook API, Qt</p>
-					</a>
-				</div>
-				<div class="box-item shadowed">
-					<img src="./assets/rjan.png" alt="project screenshot">
-					<a class="hidden-info" href="./roman_janiczek.html" target="_blank">
-						<h4>Roman Janiczek</h4>
-						<p>A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.</p>
-						<p><i class="fa fa-cogs" aria-hidden="true"></i> HTML, CSS</p>
-					</a>
-				</div>
+				{% endfor %}
 			</div>
 		</section>
 		<section class="section-container" id="skills">
