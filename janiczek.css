@@ -189,7 +189,7 @@ header.main {
 }
 .long-text {
 	font-family: "Droid Sans", sans-serif;
-	padding: 4rem 0rem;
+	padding: 4rem 8rem;
 	text-align: justify;
 }
 .displaybox {
@@ -338,6 +338,9 @@ svg:nth-child(2) path {
 	#welcome {
 		margin: 0rem 4rem 5rem 4rem;
 	}
+	.long-text {
+		padding: 4rem 4rem;
+	}
 }
 @media (max-width: 740px) {
 	#logo {
@@ -368,6 +371,9 @@ svg:nth-child(2) path {
 	}
 	.section-container header {
 		padding: 0rem 3rem;
+	}
+	.long-text {
+		padding: 4rem 2rem;
 	}
 }
 @media (max-width: 480px) {
