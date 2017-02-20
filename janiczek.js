@@ -1,4 +1,4 @@
-// code inspired by https://www.sitepoint.com/scroll-based-animations-jquery-css3/
+// this code improves upon a solution found at https://www.sitepoint.com/scroll-based-animations-jquery-css3/
 var $window = $(window);
 var $animated_elements = $('.scroll-animated');
 
@@ -12,7 +12,7 @@ var full_refresh = function() {
 		var height = $element.outerHeight();
 		var top = $element.offset().top;
 		var bottom = top + height;
-		$element.attr('data-top', top);
+		$element.attr('data-top', top); // caching data to avoid calling the costly .offset() method too often
 		$element.attr('data-bottom', bottom);
 
 		if ((top <= win_bottom) && (bottom >= win_top)) {
