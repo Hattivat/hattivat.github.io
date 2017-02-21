@@ -1,6 +1,7 @@
 // this code improves upon a solution found at https://www.sitepoint.com/scroll-based-animations-jquery-css3/
 var $window = $(window);
 var $animated_elements = $('.scroll-animated');
+var $navbar = $('#navbar');
 
 var full_refresh = function() {
 	var win_top = $window.scrollTop();
@@ -22,8 +23,15 @@ var full_refresh = function() {
 };
 
 var small_refresh = function() {
+	var win_height = $window.height();
 	var win_top = $window.scrollTop();
-	var win_bottom = (win_top + $window.height());
+	var win_bottom = (win_top + win_height);
+
+	if (win_top >= win_height) {
+		$navbar.addClass('glued');
+	} else {
+		$navbar.removeClass('glued');
+	}
 
 	$.each($animated_elements, function() {
 		var $element = $(this);

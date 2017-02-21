@@ -18,20 +18,41 @@ body {
   	font-size: 100%;
   	color: #35373c;
 }
+/* COVER PAGE */
+.cover-page {
+	background-image: url("http://www.ibm-1401.info/IBM1401_ArchivePics/1401_Production_Pics/IBM1401_Manufacturing_Landscape_1960.jpg");
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.caption {
+  	text-align: center;
+  	color: #FFF;
+}
+.caption h1 {
+	font-size: 6rem;
+}
+.caption h4 {
+	font-size: 2.75rem;
+	margin: 0px;
+	font-weight: normal;
+}
+
 /* NAVBAR */
-nav {
-	position: fixed;
+#navbar {
 	width: 100%;
 	background-color: black;
 	z-index: 3;
 }
-nav ul {
+#navbar ul {
 	text-align: center;
 	vertical-align: middle;
 	margin: 0 auto;
 	padding: 0px;
 }
-nav ul a {
+#navbar ul a {
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
@@ -41,8 +62,12 @@ nav ul a {
 	vertical-align: middle;
 	padding: 1rem 4%;
 }
-nav ul a:active {
+#navbar ul a:active {
 	transform: translateY(0.2rem);
+}
+.glued {
+	position: fixed;
+	top: 0;
 }
 #logo {
 	display: inline-block;
@@ -190,6 +215,7 @@ header.main {
 .long-text {
 	font-family: "Droid Sans", sans-serif;
 	padding: 4rem 8rem;
+	line-height: 1.75rem;
 	text-align: justify;
 }
 .displaybox {
