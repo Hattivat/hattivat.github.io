@@ -479,7 +479,7 @@ svg:nth-child(2) path {
 		line-height: 1.6rem;
 	}
 	.portrait-text {
-		padding: 2.5rem 0rem;
+		padding: 2.5rem 0.5rem;
 	}
 	.box-item h4 {
 		font-size: 1.125rem;
