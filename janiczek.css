@@ -218,6 +218,7 @@ header.main {
 .long-text {
 	font-family: "Droid Sans", sans-serif;
 	padding: 4rem 8rem;
+	margin: 0px;
 	line-height: 1.75rem;
 	text-align: justify;
 }
@@ -464,6 +465,7 @@ svg:nth-child(2) path {
 	.long-text {
 		font-size: 0.9rem;
 		padding: 2.5rem 0rem;
+		line-height: 1.6rem;
 	}
 	.box-item h4 {
 		font-size: 1.125rem;
@@ -490,5 +492,8 @@ svg:nth-child(2) path {
 	}
 	.section-subtitle {
 		font-size: 0.9rem;
+	}
+	.long-text {
+		line-height: 1.4rem;
 	}
 }
