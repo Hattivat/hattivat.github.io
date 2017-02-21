@@ -35,6 +35,7 @@ body {
 	font-size: 6rem;
 	font-family: "Raleway", sans-serif;
 	margin: 0px;
+
 }
 .caption h4 {
 	font-size: 2.75rem;
@@ -217,7 +218,7 @@ header.main {
 }
 .long-text {
 	font-family: "Droid Sans", sans-serif;
-	padding: 4rem 8rem;
+	padding: 0px;
 	margin: 0px;
 	line-height: 1.75rem;
 	text-align: justify;
@@ -254,6 +255,9 @@ header.main {
 }
 .shadowed {
 	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.portrait-text {
+	padding: 4rem 12rem;
 }
 
 /* PROJECTS SECTION */
@@ -331,6 +335,14 @@ svg:nth-child(2) path {
     opacity: 0.9;
 }
 
+#ascii {
+	width: 200px;
+	height: auto;
+	display: inline;
+	float: left;
+	margin-right: 2rem;
+}
+
 /* SCROLL ANIMATIONS */
 .scroll-animated {
 	opacity: 0;
@@ -368,7 +380,7 @@ svg:nth-child(2) path {
 	#welcome {
 		margin: 0rem 4rem 5rem 4rem;
 	}
-	.long-text {
+	.portrait-text {
 		padding: 4rem 4rem;
 	}
 }
@@ -414,7 +426,7 @@ svg:nth-child(2) path {
 	.section-container header {
 		padding: 0rem 3rem;
 	}
-	.long-text {
+	.portrait-text {
 		padding: 4rem 2rem;
 	}
 }
@@ -464,8 +476,10 @@ svg:nth-child(2) path {
 	}
 	.long-text {
 		font-size: 0.9rem;
-		padding: 2.5rem 0rem;
 		line-height: 1.6rem;
+	}
+	.portrait-text {
+		padding: 2.5rem 0rem;
 	}
 	.box-item h4 {
 		font-size: 1.125rem;
