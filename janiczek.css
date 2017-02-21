@@ -33,9 +33,12 @@ body {
 }
 .caption h1 {
 	font-size: 6rem;
+	font-family: "Raleway", sans-serif;
+	margin: 0px;
 }
 .caption h4 {
 	font-size: 2.75rem;
+	font-family: "Ubuntu", sans-serif;
 	margin: 0px;
 	font-weight: normal;
 }
