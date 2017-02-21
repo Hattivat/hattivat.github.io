@@ -6,7 +6,6 @@ var $navbar = $('#navbar');
 var full_refresh = function() {
 	var win_top = $window.scrollTop();
 	var win_bottom = (win_top + $window.height());
-	console.log(win_top, ',', win_bottom);
 
 	$.each($animated_elements, function() {
 		var $element = $(this);
