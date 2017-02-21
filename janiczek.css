@@ -21,7 +21,7 @@ body {
 /* COVER PAGE */
 .cover-page {
 	background-image: url("./assets/IBM1401_Manufacturing_Landscape_1960.jpg");
-	min-height: 100%;
+	min-height: 100vh;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
