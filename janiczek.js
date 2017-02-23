@@ -1,4 +1,4 @@
-// this code improves upon a solution found at https://www.sitepoint.com/scroll-based-animations-jquery-css3/
+// this code improves upon the solution found at https://www.sitepoint.com/scroll-based-animations-jquery-css3/
 var $window = $(window);
 var $animated_elements = $('.scroll-animated');
 var $navbar = $('#navbar');

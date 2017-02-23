@@ -3,7 +3,7 @@
         "Standard library": 75,
         "Django": 35,
         "Numpy": 20,
-        "pyQt": 10
+        "Tkinter": 10
     },
     "Javascript": {
         "Vanilla": 50,
