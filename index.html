@@ -2,141 +2,141 @@
 ---
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Jan Janiczek">
-		<meta name="description" content="Personal portfolio page of Jan Janiczek">
-		<meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
-		<link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-		<link rel="stylesheet" href="./janiczek.css">
-		<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300">
-		<script src="./assets/jquery-3.1.1.min.js"></script>
-		<title>Jan Janiczek</title>
-	</head>
-	<body lang="en-US">
-		<div class="cover-page">
-			<div class="caption grad">
-				<h1>I'm Jan Janiczek</h1>
-				<h4>an aspiring full-stack developer</p>
-			</div>
-		</div>
-		<nav id="navbar">
-			<ul>
-				<a href="#projects"><li class="grad">PROJECTS</li></a>
-				<a href="#skills"><li class="grad">SKILLS</li></a>
-				<li id="logo"><span id="first">J</span>J</li>
-				<a href="#about-me"><li class="grad">ABOUT ME</li></a>
-				<a href="#contact"><li class="grad">CONTACT</li></a>
-			</ul>
-		</nav>
-		<header class="main">
-			<div class="center">
-				<section id="welcome" class="scroll-animated left-slide">
-					<h1>Hi, I'm Jan</h1>
-					<p>an aspiring full–stack developer</p>
-				</section>
-				<div class="slideshow scroll-animated right-slide" data-aos="fade-left">
-					<img src="http://i.imgur.com/rZhkhrr.png" alt="project screenshot">
-					<img src="http://i.imgur.com/sIEez76.png" alt="project screenshot">
-					<img src="http://i.imgur.com/sZH1Fn0.png" alt="project screenshot">
-					<img src="http://i.imgur.com/st44sZV.png" alt="project screenshot">
-					<img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot">
-					<img src="./assets//monitor.png" alt="frame shaped like a computer monitor">
-					<img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot">
-				</div>
-			</div>
-		</header>
-		<section class="section-container" id="projects">
-			<header>
-				<h1 class="section-title">Example projects</h1>
-				<p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
-			</header>
-			<div class="displaybox scroll-animated bounce-up">
-				{% for project in site.data.projects %}
-				<div class="box-item shadowed">
-					<img src="{{ project[1].image }}" alt="project screenshot">
-					<a class="hidden-info" href="{{ project[1].url }}" target="_blank">
-						<h4>{{ project[0] }}</h4>
-						<p>{{ project[1].description }}</p>
-						<p><i class="fa fa-cogs" aria-hidden="true"></i> {{ project[1].technologies }}</p>
-					</a>
-				</div>
-				{% endfor %}
-			</div>
-		</section>
-		<section class="section-container" id="skills">
-			<header>
-				<h1 class="section-title">My skills</h1>
-				<p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
-			</header>
-			{% for skillset in site.data.skills %}
-			<div class="displaybox">
-				<h2 class="subsection-title">{{ skillset[0] }}</h2>
-				{% for skill in skillset[1] %}
-				<div class="circle scroll-animated circle-load" data-name="{{ skill[0] }}" data-percent="{{ skill[1] }}%">
-					<svg viewBox="-10 -10 220 220">
-						<g fill="none" stroke-width="12" transform="translate(100,100)">
-        					<path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-        					<path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-        					<path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-        					<path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-        					<path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-        					<path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-        				</g>
-        			</svg>
-        			<svg viewBox="-10 -10 220 220">
-        				<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="{{ skill[1] | times:6.29 | round }}"></path>
-        			</svg>
-				</div>
-				{% endfor %}
-			</div>
-			{% endfor %}
-		</section>
-		<section class="section-container" id="about-me">
-			<header>
-				<h1 class="section-title">About me</h1>
-			</header>
-			<div class="portrait-text">
-				<img id="ascii" src="./assets/ascii.png">
-				<p class="long-text">My name is Jan Janiczek, and I hold a combined "human languages plus computer science fundamentals" (Linguistics and Information Science) BA degree from the Adam Mickiewicz University in Poznań. Following graduation, I spent two years as a freelance English-Polish translator, culminating in the publication of an RPG sourcebook entirely translated by me. Disappointed by the career prospects of, and perhaps more importantly, the lack of employer respect for, translators in my country, I decided to make use of the Computer-Science-related part of my degree. I hjoined the Access Management team in the IT Security Support division of GlaxoSmithKline as a trainee, and spent 18 months working there, putting into practical use my knowledge of SQL and Python, and learning to use PowerShell and Active Directory. Although I enjoyed working in the multi-national environment of GSK, when my apprenticeship ended I decided use my savings to take time off work to further develop my skills and graduate from a hobby coder to a professional developer. The following 6 months were a period of intense study, the highlights of which I discuss below.</p>
-			</div>
-		</section>
-		<section class="section-container" id="contact">
-			<header>
-				<h1 class="section-title">Contact</h1>
-			</header>
-		</section>
-	</body>
-	<script src="./janiczek.js"></script>
-	<!-- DEFINITIONS FOR CIRCLE-LOADING ANIMATION STYLING -->
-	<svg width="0" height="0">
-		<defs>
-			<linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
-    			<stop stop-color="#618099"/>
-    			<stop offset="100%" stop-color="#8e6677"/>
-			</linearGradient>
-			<linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-    			<stop stop-color="#8e6677"/>
-    			<stop offset="100%" stop-color="#9b5e67"/>
-			</linearGradient>
-			<linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
-    			<stop stop-color="#9b5e67"/>
-			    <stop offset="100%" stop-color="#9c787a"/>
-			</linearGradient>
-			<linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-    			<stop stop-color="#9c787a"/>
-    			<stop offset="100%" stop-color="#817a94"/>
-			</linearGradient>
-			<linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
-    			<stop stop-color="#817a94"/>
-    			<stop offset="100%" stop-color="#498a98"/>
-			</linearGradient>
-			<linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-    			<stop stop-color="#498a98"/>
-    			<stop offset="100%" stop-color="#618099"/>
-			</linearGradient>
-		</defs>
-	</svg>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jan Janiczek">
+        <meta name="description" content="Personal portfolio page of Jan Janiczek">
+        <meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+        <link rel="stylesheet" href="./janiczek.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300">
+        <script src="./assets/jquery-3.1.1.min.js"></script>
+        <title>Jan Janiczek</title>
+    </head>
+    <body lang="en-US">
+        <div class="cover-page">
+            <div class="caption grad">
+                <h1>I'm Jan Janiczek</h1>
+                <h4>an aspiring full-stack developer</p>
+            </div>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <a href="#projects"><li class="grad">PROJECTS</li></a>
+                <a href="#skills"><li class="grad">SKILLS</li></a>
+                <li id="logo"><span id="first">J</span>J</li>
+                <a href="#about-me"><li class="grad">ABOUT ME</li></a>
+                <a href="#contact"><li class="grad">CONTACT</li></a>
+            </ul>
+        </nav>
+        <header class="main">
+            <div class="center">
+                <section id="welcome" class="scroll-animated left-slide">
+                    <h1>Hi, I'm Jan</h1>
+                    <p>an aspiring full–stack developer</p>
+                </section>
+                <div class="slideshow scroll-animated right-slide" data-aos="fade-left">
+                    <img src="http://i.imgur.com/rZhkhrr.png" alt="project screenshot">
+                    <img src="http://i.imgur.com/sIEez76.png" alt="project screenshot">
+                    <img src="http://i.imgur.com/sZH1Fn0.png" alt="project screenshot">
+                    <img src="http://i.imgur.com/st44sZV.png" alt="project screenshot">
+                    <img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot">
+                    <img src="./assets//monitor.png" alt="frame shaped like a computer monitor">
+                    <img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot">
+                </div>
+            </div>
+        </header>
+        <section class="section-container" id="projects">
+            <header>
+                <h1 class="section-title">Example projects</h1>
+                <p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
+            </header>
+            <div class="displaybox scroll-animated bounce-up">
+                {% for project in site.data.projects %}
+                <div class="box-item shadowed">
+                    <img src="{{ project[1].image }}" alt="project screenshot">
+                    <a class="hidden-info" href="{{ project[1].url }}" target="_blank">
+                        <h4>{{ project[0] }}</h4>
+                        <p>{{ project[1].description }}</p>
+                        <p><i class="fa fa-cogs" aria-hidden="true"></i> {{ project[1].technologies }}</p>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        <section class="section-container" id="skills">
+            <header>
+                <h1 class="section-title">My skills</h1>
+                <p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
+            </header>
+            {% for skillset in site.data.skills %}
+            <div class="displaybox">
+                <h2 class="subsection-title">{{ skillset[0] }}</h2>
+                {% for skill in skillset[1] %}
+                <div class="circle scroll-animated circle-load" data-name="{{ skill[0] }}" data-percent="{{ skill[1] }}%">
+                    <svg viewBox="-10 -10 220 220">
+                        <g fill="none" stroke-width="12" transform="translate(100,100)">
+                            <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                            <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                            <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                            <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                            <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                            <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                        </g>
+                    </svg>
+                    <svg viewBox="-10 -10 220 220">
+                        <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="{{ skill[1] | times:6.29 | round }}"></path>
+                    </svg>
+                </div>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </section>
+        <section class="section-container" id="about-me">
+            <header>
+                <h1 class="section-title">About me</h1>
+            </header>
+            <div class="portrait-text">
+                <img id="ascii" src="./assets/ascii.png">
+                <p class="long-text">My name is Jan Janiczek, and I hold a combined "human languages plus computer science fundamentals" (Linguistics and Information Science) BA degree from the Adam Mickiewicz University in Poznań. Following graduation, I spent two years as a freelance English-Polish translator, culminating in the publication of an RPG sourcebook entirely translated by me. Disappointed by the career prospects of, and perhaps more importantly, the lack of employer respect for, translators in my country, I decided to make use of the Computer-Science-related part of my degree. I joined the Access Management team in the IT Security Support division of GlaxoSmithKline as a trainee, and spent 18 months working there, putting into practical use my knowledge of SQL and Python, and learning to use PowerShell and Active Directory. Although I enjoyed working in the multi-national environment of GSK, when my apprenticeship ended I decided use my savings to take time off work to further develop my skills and graduate from a hobby coder to a professional developer. The following 6 months were a period of intense study, the highlights of which I discuss below.</p>
+            </div>
+        </section>
+        <section class="section-container" id="contact">
+            <header>
+                <h1 class="section-title">Contact</h1>
+            </header>
+        </section>
+    </body>
+    <script src="./janiczek.js"></script>
+    <!-- DEFINITIONS FOR CIRCLE-LOADING ANIMATION STYLING -->
+    <svg width="0" height="0">
+        <defs>
+            <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#618099"/>
+                <stop offset="100%" stop-color="#8e6677"/>
+            </linearGradient>
+            <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                <stop stop-color="#8e6677"/>
+                <stop offset="100%" stop-color="#9b5e67"/>
+            </linearGradient>
+            <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                <stop stop-color="#9b5e67"/>
+                <stop offset="100%" stop-color="#9c787a"/>
+            </linearGradient>
+            <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                <stop stop-color="#9c787a"/>
+                <stop offset="100%" stop-color="#817a94"/>
+            </linearGradient>
+            <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                <stop stop-color="#817a94"/>
+                <stop offset="100%" stop-color="#498a98"/>
+            </linearGradient>
+            <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                <stop stop-color="#498a98"/>
+                <stop offset="100%" stop-color="#618099"/>
+            </linearGradient>
+        </defs>
+    </svg>
 </html>

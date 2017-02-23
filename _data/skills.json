@@ -1,32 +1,32 @@
 {
-	"Python": {
-		"Standard library": 75,
-		"Django": 35,
-		"Numpy": 20,
-		"pyQt": 10
-	},
-	"Javascript": {
-		"Vanilla": 50,
-		"jQuery": 75,
-		"Angular": 25,
-		"React": 5
-	},
-	"Front-end": {
-		"HTML5": 80,
-		"CSS3": 66,
-		"Bootstrap": 50,
-		"SVG": 10
-	},
-	"Tools": {
-		"Linux": 50,
-		"Git": 35,
-		"PowerShell": 20,
-		"SQL": 25
-	},
-	"Concepts": {
-		"Object-oriented programming": 25,
-		"Functional programming": 40,
-		"MVC": 40,
-		"RWD": 25
-	}
+    "Python": {
+        "Standard library": 75,
+        "Django": 35,
+        "Numpy": 20,
+        "pyQt": 10
+    },
+    "Javascript": {
+        "Vanilla": 50,
+        "jQuery": 75,
+        "Angular": 25,
+        "React": 5
+    },
+    "Front-end": {
+        "HTML5": 80,
+        "CSS3": 66,
+        "Bootstrap": 50,
+        "SVG": 10
+    },
+    "Tools": {
+        "Linux": 50,
+        "Git": 35,
+        "PowerShell": 20,
+        "SQL": 25
+    },
+    "Concepts": {
+        "Object-oriented programming": 25,
+        "Functional programming": 40,
+        "MVC": 40,
+        "RWD": 25
+    }
 }
