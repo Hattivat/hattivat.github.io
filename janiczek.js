@@ -31,6 +31,7 @@ var small_refresh = function() {
         $(".main").css("padding-top", "7.3rem");
     } else {
         $navbar.removeClass('glued');
+        $(".main").css("padding-top", "3.65rem");
     }
 
     $.each($animated_elements, function() {
