@@ -28,6 +28,7 @@ var small_refresh = function() {
 
     if (win_top >= win_height) {
         $navbar.addClass('glued');
+        $(".main").css("padding-top", "7.3rem");
     } else {
         $navbar.removeClass('glued');
     }
