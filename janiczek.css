@@ -48,8 +48,14 @@ body {
     bottom: 20px;
     left: 20px;
     display: inline;
+}
+.button-list a {
+    text-decoration: none;
+    font-size: 3.3vh;
+    color: black;
+}
+.button-list a i:nth-child(1) {
     color: white;
-    
 }
 
 /* NAVBAR */
