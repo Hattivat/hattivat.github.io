@@ -43,6 +43,14 @@ body {
     margin: 0px;
     font-weight: normal;
 }
+.button-list {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: inline;
+    color: white;
+    
+}
 
 /* NAVBAR */
 #navbar {
