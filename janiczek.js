@@ -28,10 +28,10 @@ var small_refresh = function() {
 
     if (win_top >= win_height) {
         $navbar.addClass('glued');
-        $(".main").css("padding-top", "7.3rem");
+        $(".main").css("margin-top", "3.65rem");
     } else {
         $navbar.removeClass('glued');
-        $(".main").css("padding-top", "3.65rem");
+        $(".main").css("margin-top", "0px");
     }
 
     $.each($animated_elements, function() {
