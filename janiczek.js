@@ -28,7 +28,9 @@ var small_refresh = function() {
 
     if (win_top >= win_height) {
         $navbar.addClass('glued');
-        $(".main").css("margin-top", "3.65rem");
+        if (win_height > 617) {
+            $(".main").css("margin-top", "3.65rem");
+        }
     } else {
         $navbar.removeClass('glued');
         $(".main").css("margin-top", "0px");
