@@ -2,6 +2,7 @@
 var $window = $(window);
 var $animated_elements = $('.scroll-animated');
 var $navbar = $('#navbar');
+var $header = $(".main");
 
 var full_refresh = function() {
     var win_top = $window.scrollTop();
@@ -26,14 +27,21 @@ var small_refresh = function() {
     var win_top = $window.scrollTop();
     var win_bottom = (win_top + win_height);
 
+
     if (win_top >= win_height) {
         $navbar.addClass('glued');
         if ($window.width() > 617) {
-            $(".main").css("margin-top", "3.65rem");
+            $header.css("padding-top", "7.3rem");
+        } else {
+            $header.css("padding-top", "9.5rem");
         }
     } else {
         $navbar.removeClass('glued');
-        $(".main").css("margin-top", "0px");
+        if ($window.width() > 617) {
+            $header.css("padding-top", "3.65rem");
+        } else {
+            $header.css("padding-top", "0px");
+        }
     }
 
     $.each($animated_elements, function() {
