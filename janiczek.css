@@ -356,8 +356,8 @@ svg:nth-child(2) path {
 }
 
 #ascii {
-    width: 200px !important;
-    height: 250px !important;
+    width: 300px !important;
+    height: 429px !important;
     display: inline;
     float: left;
     margin-right: 2rem;
@@ -506,6 +506,9 @@ svg:nth-child(2) path {
     }
     .box-item p {
         font-size: 0.9rem;
+    }
+    #ascii {
+        margin-right: 0px;
     }
 }
 @media (max-width: 360px) {
