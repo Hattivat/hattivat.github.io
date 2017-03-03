@@ -319,8 +319,8 @@ header.main {
     text-align: center;
     color: #93A2AC;
     font-family: "Droid Sans", sans-serif;
-    padding: 2rem;
-    max-width: 50%;
+    margin: 2rem;
+    max-width: 40%;
 }
 .circle:before {
     content: attr(data-name);
