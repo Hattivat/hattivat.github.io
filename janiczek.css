@@ -360,8 +360,8 @@ svg:nth-child(2) path {
 }
 
 #ascii {
-    width: 300px !important;
-    height: 429px !important;
+    width: 200px !important;
+    height: 286px !important;
     display: inline;
     float: left;
     margin-right: 2rem;
