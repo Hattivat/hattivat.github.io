@@ -314,7 +314,8 @@ header.main {
     }
 }
 .circle-container {
-    max-width: 50%;
+    max-width: 40%;
+    margin: 2rem;
 }
 .circle {
     display: inline-block;
@@ -322,7 +323,7 @@ header.main {
     text-align: center;
     color: #93A2AC;
     font-family: "Droid Sans", sans-serif;
-    margin: 2rem;
+    margin: 0px;
 }
 .circle:before {
     content: attr(data-name);
