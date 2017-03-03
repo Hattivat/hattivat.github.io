@@ -309,12 +309,13 @@ header.main {
     background-color: #d8f3e8;
 }
 /* based on http://www.cssscript.com/animated-circular-progress-bar-using-svg-path-animation/ */
-@keyframes load{ 0% {
-    stroke-dashoffset:0
+@keyframes load{ 
+    0% {
+        stroke-dashoffset:0
     }
 }
 .circle-container {
-    max-width: 40%;
+    max-width: 10rem;
     margin: 2rem;
 }
 .circle {
