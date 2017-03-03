@@ -313,6 +313,9 @@ header.main {
     stroke-dashoffset:0
     }
 }
+.circle-container {
+    max-width: 50%;
+}
 .circle {
     display: inline-block;
     position: relative;
@@ -320,7 +323,6 @@ header.main {
     color: #93A2AC;
     font-family: "Droid Sans", sans-serif;
     margin: 2rem;
-    max-width: 40%;
 }
 .circle:before {
     content: attr(data-name);
