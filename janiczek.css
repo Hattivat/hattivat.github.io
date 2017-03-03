@@ -319,7 +319,8 @@ header.main {
     text-align: center;
     color: #93A2AC;
     font-family: "Droid Sans", sans-serif;
-    margin: 2rem;
+    padding: 2rem;
+    max-width: 50%;
 }
 .circle:before {
     content: attr(data-name);
