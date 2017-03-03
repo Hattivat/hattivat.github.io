@@ -172,7 +172,7 @@ header.main {
 }
 @keyframes xfade{
     0%{
-           opacity: 1;
+        opacity: 1;
       }
       20% {
         opacity:1;
