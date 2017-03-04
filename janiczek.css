@@ -315,6 +315,7 @@ header.main {
     }
 }
 .circle-container {
+    box-sizing: border-box;
     max-width: 10rem;
     padding: 2rem;
 }
