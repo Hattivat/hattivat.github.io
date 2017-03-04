@@ -316,7 +316,7 @@ header.main {
 }
 .circle-container {
     box-sizing: border-box;
-    max-width: 10rem;
+    max-width: 14rem;
     padding: 2rem;
 }
 .circle {
@@ -452,9 +452,6 @@ svg:nth-child(2) path {
     .section-container header {
         padding: 0rem 3rem;
     }
-    .circle-container {
-        padding: 1rem;
-    }
     .portrait-text {
         padding: 4rem 2rem;
     }
@@ -502,6 +499,16 @@ svg:nth-child(2) path {
     }
     .section-container {
         padding: 3rem 0rem;
+    }
+    .circle-container {
+        padding: 1rem;
+        max-width: 11rem;
+    }
+    .circle:before {
+        bottom: -1rem;
+    }
+    .circle:after {
+        font-size: 1.5rem;
     }
     .long-text {
         font-size: 0.9rem;
