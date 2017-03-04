@@ -452,6 +452,9 @@ svg:nth-child(2) path {
     .section-container header {
         padding: 0rem 3rem;
     }
+    .circle-container {
+        padding: 1rem;
+    }
     .portrait-text {
         padding: 4rem 2rem;
     }
