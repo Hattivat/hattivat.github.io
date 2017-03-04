@@ -546,6 +546,9 @@ svg:nth-child(2) path {
     .section-subtitle {
         font-size: 0.9rem;
     }
+    .circle-container {
+        max-width: 9.5rem;
+    }
     .long-text {
         line-height: 1.4rem;
     }
