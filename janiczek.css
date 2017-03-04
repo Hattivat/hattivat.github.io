@@ -501,14 +501,15 @@ svg:nth-child(2) path {
         padding: 3rem 0rem;
     }
     .circle-container {
-        padding: 1rem;
+        padding: 0rem 1rem 2rem 1rem;
         max-width: 11rem;
     }
     .circle:before {
         bottom: -1rem;
     }
     .circle:after {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
+        top: 4rem;
     }
     .long-text {
         font-size: 0.9rem;
@@ -548,6 +549,12 @@ svg:nth-child(2) path {
     }
     .circle-container {
         max-width: 9.5rem;
+    }
+    .circle:after {
+        font-size: 1.5rem;
+    }
+    .circle:before {
+        bottom: -0.75rem;
     }
     .long-text {
         line-height: 1.4rem;
