@@ -132,7 +132,7 @@ body {
 }
 .button-list a {
     text-decoration: none;
-    font-size: 3.3vh;
+    font-size: 3vh;
     color: black;
 }
 .button-list a i:nth-child(1) {
@@ -441,7 +441,7 @@ footer p {
 .social a {
     display: inline;
     text-decoration: none;
-    font-size: 4.5vh;
+    font-size: 4vh;
     color: #d3d3d3;
     padding: 0rem 0.5rem;
 }
