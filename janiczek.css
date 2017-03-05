@@ -390,8 +390,33 @@ svg:nth-child(2) path {
     max-width: 600px;
     width: 100%;
 }
-#contact form input {
-
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #CCC;
+    background-color: #FFF;
+    margin: 0.5rem 0rem;
+    color: #35373c;
+}
+#contact input:focus, #contact textarea:focus {
+    border: 1px solid #666;
+}
+#contact input[type="submit"] {
+    cursor: pointer;
+    background-color: #0CF;
+    color: #FFF;
+    border: none;
+}
+#contact input[type="submit"]:hover {
+    background-color: #09C;
+    transition: background-color 0.2s ease-in-out;
+}
+#contact input[type="submit"]:active {
+    transform: translateY(0.1rem);
+}
+#contact textarea {
+    resize: none;
+    height: 9rem;
 }
 
 /* FOOTER */

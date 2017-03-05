@@ -145,11 +145,13 @@
                 <h3 class="section-subtitle">Whether you would like to hire me, provide some constructive criticism, or discuss rocket technology trivia, feel free to use the contact box below</h3>
             </header>
             <div class="displaybox">
-                <form class="contact-form" action="mailto:janek.janiczek@gmail.com">
-                    <input type="text" name="contactname" placeholder="Your name" required /><br />
-                    <input type="email" name="email" placeholder="Your e-mail" required /><br />
+                <form class="contact-form" action="https://formspree.io/janek.janiczek@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your name" required /><br />
+                    <input type="email" name="_replyto" placeholder="Your e-mail" required /><br />
+                    <input type="text" name="_subject" placeholder="Subject" /><br />
                     <textarea name="message" placeholder="Type your message here..." required></textarea><br />
                     <input type="submit" value="Send" />
+                    <input type="hidden" name="_next" value="hattivat.github.io/index.html" />
                 </form>
             </div>
         </section>
