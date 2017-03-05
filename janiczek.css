@@ -236,13 +236,6 @@ header.main {
     font-size: 1.25rem;
     font-family: "Ubuntu", sans-serif;
 }
-.long-text {
-    font-family: "Droid Sans", sans-serif;
-    padding: 0px;
-    margin: 0px;
-    line-height: 1.75rem;
-    text-align: justify;
-}
 .displaybox {
     display: flex;
     flex-direction: row;
@@ -361,12 +354,28 @@ svg:nth-child(2) path {
     opacity: 0.9;
 }
 
+/* ABOUT ME SECTION */
+
 #ascii {
     width: 200px !important;
     height: 286px !important;
     display: inline;
     float: left;
     margin-right: 2rem;
+}
+.long-text {
+    font-family: "Droid Sans", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.75rem;
+    text-align: justify;
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    background-color: #40c48f;
+    color: white;
 }
 
 /* SCROLL ANIMATIONS */
