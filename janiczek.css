@@ -431,6 +431,7 @@ footer p {
     margin: 0px;
     padding-bottom: 2rem;
     color: #d3d3d3;
+    line-height: 1.75rem;
 }
 .social {
     margin: 0 auto;
