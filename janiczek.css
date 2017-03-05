@@ -8,6 +8,15 @@
          url('./assets/Anders.woff') format('woff'),
          url('./assets/Anders.ttf') format('truetype');
 }
+
+/* GENERAL BODY STYLING */
+html {
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    -o-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
 body {
     margin: 0 auto;
     /* font-family: -apple-system, BlinkMacSystemFont, 
@@ -18,6 +27,73 @@ body {
       font-size: 100%;
       color: #35373c;
 }
+.grad {
+    color: #40c48f;
+    list-style: none;
+    -webkit-text-fill-color: transparent;
+    /*    background-image: linear-gradient(to right, #52f2b2, #094741); */
+    background-image: -webkit-linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
+    -webkit-background-clip: text;
+      /* background-clip: text; */
+}
+.section-container {
+    text-align: center;
+    padding: 5rem 0rem;
+}
+.section-container header {
+    padding: 0rem 5rem;
+}
+.section-title {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    margin: 0px;
+}
+.subsection-title {
+    font-size: 1.75rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    width: 100%;
+}
+.section-subtitle {
+    font-size: 1.25rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: normal;
+}
+.displaybox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+.box-item {
+    margin: 2rem;
+    padding: 0;
+    position: relative;
+    max-width: 300px;
+}
+.box-item:hover {
+    transform: translateY(-5px);
+}
+.box-item h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    color: #35373c;
+}
+.box-item p {
+    font-family: "Droid Sans", sans-serif;
+    margin: 0.5rem;
+    color: #35373c;
+}
+.shadowed {
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
 /* COVER PAGE */
 .cover-page {
     background-image: url("./assets/IBM1401_Manufacturing_Landscape_1960.jpg");
@@ -203,76 +279,6 @@ header.main {
     animation: xfade 10s 8s infinite;
 }
 
-/* GENERAL BODY STYLING */
-.grad {
-    color: #40c48f;
-    list-style: none;
-    -webkit-text-fill-color: transparent;
-    /*    background-image: linear-gradient(to right, #52f2b2, #094741); */
-    background-image: -webkit-linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
-    -webkit-background-clip: text;
-      /* background-clip: text; */
-}
-.section-container {
-    text-align: center;
-    padding: 5rem 0rem;
-}
-.section-container header {
-    padding: 0rem 5rem;
-}
-.section-title {
-    font-size: 3rem;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    margin: 0px;
-}
-.subsection-title {
-    font-size: 1.75rem;
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    width: 100%;
-}
-.section-subtitle {
-    font-size: 1.25rem;
-    font-family: "Ubuntu", sans-serif;
-}
-.displaybox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: top;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0rem;
-}
-.box-item {
-    margin: 2rem;
-    padding: 0;
-    position: relative;
-    max-width: 300px;
-}
-.box-item:hover {
-    transform: translateY(-5px);
-}
-.box-item h4 {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 1.25rem;
-    margin: 0.5rem;
-    color: #35373c;
-}
-.box-item p {
-    font-family: "Droid Sans", sans-serif;
-    margin: 0.5rem;
-    color: #35373c;
-}
-.shadowed {
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
-}
-.portrait-text {
-    padding: 4rem 12rem;
-}
-
 /* PROJECTS SECTION */
 .box-item img {
     width: 100%;
@@ -353,9 +359,12 @@ svg:nth-child(2) path {
     stroke: #fff;
     opacity: 0.9;
 }
+#hidden-svg {
+    width: 0px;
+    height: 0px;
+}
 
 /* ABOUT ME SECTION */
-
 #ascii {
     width: 200px !important;
     height: 286px !important;
@@ -370,12 +379,44 @@ svg:nth-child(2) path {
     line-height: 1.75rem;
     text-align: justify;
 }
+.portrait-text {
+    padding: 4rem 12rem;
+}
 
 /* CONTACT SECTION */
-
 #contact {
     background-color: #40c48f;
     color: white;
+}
+#contact form {
+    max-width: 600px;
+    width: 100%;
+}
+#contact form input {
+
+}
+
+/* FOOTER */
+footer {
+    background-color: #35373c;
+}
+footer p {
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 2rem;
+    color: #d3d3d3;
+}
+.social {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+.social a {
+    display: inline;
+    text-decoration: none;
+    font-size: 3.5vh;
+    color: #d3d3d3;
+    padding: 0rem 0.5rem;
 }
 
 /* SCROLL ANIMATIONS */

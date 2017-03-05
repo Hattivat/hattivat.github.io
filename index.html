@@ -3,16 +3,16 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jan Janiczek">
-        <meta name="description" content="Personal portfolio page of Jan Janiczek">
-        <meta name="keywords" content="web developer, programmer, javascript, python, functional programming">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Jan Janiczek" />
+        <meta name="description" content="Personal portfolio page of Jan Janiczek" />
+        <meta name="keywords" content="web developer, programmer, javascript, python, functional programming" />
         <meta name="google-site-verification" content="TigNT4T0aYT9paQpBP9Rwk0e5kTVXA52-KnO9RZYayM" />
-        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-        <link rel="stylesheet" href="./janiczek.css">
-        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300">
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+        <link rel="stylesheet" href="./janiczek.css" />
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:300|Raleway|Ubuntu:300" />
         <script src="./assets/jquery-3.1.1.min.js"></script>
         <title>Jan Janiczek</title>
     </head>
@@ -72,25 +72,25 @@
                     <p>an aspiring full–stack developer</p>
                 </section>
                 <div class="slideshow scroll-animated right-slide" data-aos="fade-left">
-                    <img src="http://i.imgur.com/rZhkhrr.png" alt="project screenshot">
-                    <img src="http://i.imgur.com/sIEez76.png" alt="project screenshot">
-                    <img src="http://i.imgur.com/sZH1Fn0.png" alt="project screenshot">
-                    <img src="http://i.imgur.com/st44sZV.png" alt="project screenshot">
-                    <img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot">
-                    <img src="./assets//monitor.png" alt="frame shaped like a computer monitor">
-                    <img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot">
+                    <img src="http://i.imgur.com/rZhkhrr.png" alt="project screenshot" />
+                    <img src="http://i.imgur.com/sIEez76.png" alt="project screenshot" />
+                    <img src="http://i.imgur.com/sZH1Fn0.png" alt="project screenshot" />
+                    <img src="http://i.imgur.com/st44sZV.png" alt="project screenshot" />
+                    <img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot" />
+                    <img src="./assets//monitor.png" alt="frame shaped like a computer monitor" />
+                    <img src="http://i.imgur.com/iYvBVVT.png" alt="project screenshot" />
                 </div>
             </div>
         </header>
         <section class="section-container" id="projects">
             <header>
                 <h1 class="section-title">Example projects</h1>
-                <p class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</p>
+                <h3 class="section-subtitle">I believe in choosing the right tools for the right job, which is why you'll see a lot of different technologies mentioned below</h3>
             </header>
             <div class="displaybox scroll-animated bounce-up">
                 {% for project in site.data.projects %}
                 <div class="box-item shadowed">
-                    <img src="{{ project[1].image }}" alt="project screenshot">
+                    <img src="{{ project[1].image }}" alt="project screenshot" />
                     <a class="hidden-info" href="{{ project[1].url }}" target="_blank">
                         <h4>{{ project[0] }}</h4>
                         <p>{{ project[1].description }}</p>
@@ -103,7 +103,7 @@
         <section class="section-container" id="skills">
             <header>
                 <h1 class="section-title">My skills</h1>
-                <p class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</p>
+                <h3 class="section-subtitle">I'm always excited to learn new things, both computer and human-related.</h3>
             </header>
             {% for skillset in site.data.skills %}
             <div class="displaybox">
@@ -135,28 +135,51 @@
                 <h1 class="section-title">About me</h1>
             </header>
             <div class="portrait-text">
-                <img id="ascii" src="./assets/ascii.png" alt="ASCII art portrait">
+                <img id="ascii" src="./assets/ascii.png" alt="ASCII art portrait" />
                 <p class="long-text">My name is Jan Janiczek, and I hold a combined "human languages plus computer science fundamentals" (Linguistics and Information Science) BA degree from the Adam Mickiewicz University in Poznań. Following graduation, I spent two years as a freelance English-Polish translator, culminating in the publication of an RPG sourcebook entirely translated by me. Disappointed by the career prospects of, and perhaps more importantly, the lack of employer respect for, translators in my country, I decided to make use of the Computer-Science-related part of my degree. I joined the Access Management team in the IT Security Support division of GlaxoSmithKline as a trainee, and spent 18 months working there, putting into practical use my knowledge of SQL and Python, and learning to use PowerShell and Active Directory. Although I enjoyed working in the multi-national environment of GSK, when my apprenticeship ended I decided to use my savings to take time off work to further develop my skills and graduate from a hobby coder to a professional developer. The following 6 months were a period of intense study, the highlights of which I discuss below.</p>
             </div>
         </section>
         <section class="section-container" id="contact">
             <header>
                 <h1 class="section-title">Contact</h1>
-                <p class="section-subtitle">Whether you would like to hire me, provide some constructive criticism, or discuss some rocket technology trivia, feel free to use the contact box below</p>
+                <h3 class="section-subtitle">Whether you would like to hire me, provide some constructive criticism, or discuss rocket technology trivia, feel free to use the contact box below</h3>
             </header>
             <div class="displaybox">
                 <form class="contact-form" action="mailto:janek.janiczek@gmail.com">
                     <input type="text" name="contactname" placeholder="Your name" required /><br />
                     <input type="email" name="email" placeholder="Your e-mail" required /><br />
-                    <textarea name="message" placeholder="Message" required></textarea><br />
+                    <textarea name="message" placeholder="Type your message here..." required></textarea><br />
                     <input type="submit" value="Send" />
                 </form>
             </div>
         </section>
+        <footer>
+            <div class="social">
+                <a href="https://github.com/Hattivat" aria-label="Github account">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.goodreads.com/user/show/5013331-hattivat" aria-label="Goodreads account">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                </a>
+                <a href="https://rateyourmusic.com/~hattivat" aria-label="Rateyourmusic account">
+                    <i class="fa fa-music" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jan-janiczek-b8784a55/" aria-label="LinkedIn account">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="http://indonezjada.blogspot.com/" aria-label="My old travel blog">
+                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+                </a>
+                <a href="http://hattivat.imgur.com/" aria-label="Imgur account">
+                    <i class="fa fa-rocket" aria-hidden="true"></i>
+                </a>
+            </div>
+            <p>Hand-written by Jan Janiczek.<br />© Copyright 2017. All rights reserved.</p>
+        </footer>
     </body>
     <script src="./janiczek.js"></script>
     <!-- DEFINITIONS FOR CIRCLE-LOADING ANIMATION STYLING -->
-    <svg width="0" height="0">
+    <svg id="hidden-svg">
         <defs>
             <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
                 <stop stop-color="#618099"/>
