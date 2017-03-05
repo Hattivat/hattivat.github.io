@@ -19,22 +19,21 @@ html {
 }
 body {
     margin: 0 auto;
-    /* font-family: -apple-system, BlinkMacSystemFont, 
-           "Segoe UI", "Roboto", "Oxygen", 
-           "Ubuntu", "Cantarell", "Fira Sans", 
-           "Droid Sans", "Helvetica Neue", sans-serif; */
-      font-weight: 300;
-      font-size: 100%;
-      color: #35373c;
+    font-family: "Droid Sans", sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    color: #35373c;
 }
 .grad {
     color: #40c48f;
     list-style: none;
     -webkit-text-fill-color: transparent;
-    /*    background-image: linear-gradient(to right, #52f2b2, #094741); */
+    /* got rid of the non-webkit options since this css trick only works properly on webkit anyway, this way non-webkit browsers
+    fall back to defaults instead of displaying weird effects */
+    /* background-image: linear-gradient(to right, #52f2b2, #094741); */
+    /* background-clip: text; */
     background-image: -webkit-linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
     -webkit-background-clip: text;
-      /* background-clip: text; */
 }
 .section-container {
     text-align: center;
@@ -373,7 +372,6 @@ svg:nth-child(2) path {
     margin-right: 2rem;
 }
 .long-text {
-    font-family: "Droid Sans", sans-serif;
     padding: 0px;
     margin: 0px;
     line-height: 1.75rem;
