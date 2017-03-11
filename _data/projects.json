@@ -9,7 +9,7 @@
         "url": "https://github.com/Hattivat/PAPER",
         "description": "A desktop application to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.",
         "technologies": "Python, Tkinter, MS Outlook API",
-        "image": "./assets/rjan.png"
+        "image": "./assets/paper.png"
     },
     "Roman Janiczek": {
         "url": "./roman_janiczek.html",
