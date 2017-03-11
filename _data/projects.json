@@ -11,6 +11,12 @@
         "technologies": "Python, Tkinter, MS Outlook API",
         "image": "./assets/paper.png"
     },
+    "SICP": {
+        "url": "https://github.com/Hattivat/SICP",
+        "description": "In order to deepen my understanding of functional programming, I am working my way through all exercises from the legendary Structure and Interpretation of Computer Programs.",
+        "technologies": "Scheme (a dialect of Lisp)",
+        "image": "./assets/sicp.png"
+    },
     "Roman Janiczek": {
         "url": "./roman_janiczek.html",
         "description": "A tribute page to my late grandfather. Intentionally minimalistic, yet still designed with responsiveness in mind.",
