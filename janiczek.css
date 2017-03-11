@@ -295,6 +295,7 @@ header.main {
     text-decoration: none;
     text-align: left;
     opacity: 0;
+    background-color: white;
     transition: all 1s;
 }
 .hidden-info:hover {
