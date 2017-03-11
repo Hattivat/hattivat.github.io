@@ -295,6 +295,7 @@ header.main {
     text-decoration: none;
     text-align: left;
     opacity: 0;
+    color: black;
     background-color: white;
     transition: all 1s;
 }
