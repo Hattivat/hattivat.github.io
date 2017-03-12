@@ -221,18 +221,18 @@ header.main {
     vertical-align: center;
 }
 .slideshow {
-    padding: 0rem 4rem;
+    padding: 0rem 4.5rem;
 }
 .slideshow img {
     position: absolute;
     width: 432px;
-    height: auto;
+    height: 253px;
     padding: 0%;
 }
 .slideshow img:nth-child(7) {
     visibility: hidden;
     width: 432px;
-    height: auto;
+    height: 253px;
     position: static;
     padding: 0%;
 }
