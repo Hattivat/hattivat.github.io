@@ -190,7 +190,7 @@ header.main {
     background-color: #F2F2F2;
     width: 100%;
     position: relative;
-    padding-top: 3.65rem
+    padding-top: 3.65rem;
     overflow-x: hidden;
 }
 .center {
@@ -561,6 +561,7 @@ footer p {
     }
     .slideshow img, .slideshow img:nth-child(7) {
         width: 100%;
+        height: auto;
     }
     .slideshow img:nth-child(6) {
         display: none;
