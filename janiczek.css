@@ -191,6 +191,7 @@ header.main {
     width: 100%;
     position: relative;
     padding-top: 3.65rem
+    overflow-x: hidden;
 }
 .center {
     margin: 0 auto;
