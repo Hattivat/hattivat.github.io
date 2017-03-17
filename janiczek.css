@@ -245,6 +245,7 @@ header.main {
     margin-left: -14px;
     margin-top: -14px;
     z-index: 2;
+    overflow-y: hidden;
 }
 @keyframes xfade{
     0%{
