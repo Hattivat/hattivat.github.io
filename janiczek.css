@@ -32,6 +32,7 @@ body {
     fall back to defaults instead of displaying weird effects */
     /* background-image: linear-gradient(to right, #52f2b2, #094741); */
     /* background-clip: text; */
+    background-color: #40c48f;
     background-image: -webkit-linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
     -webkit-background-clip: text;
 }
