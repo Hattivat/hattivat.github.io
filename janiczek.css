@@ -29,11 +29,10 @@ body {
     list-style: none;
     -webkit-text-fill-color: transparent;
     /* got rid of the non-webkit options since this css trick only works properly on webkit anyway, this way non-webkit browsers
-    fall back to defaults instead of displaying weird effects */
-    /* background-image: linear-gradient(to right, #52f2b2, #094741); */
-    /* background-clip: text; */
-    background-color: #40c48f;
-    background-image: -webkit-linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
+    fall back to defaults instead of displaying weird effects
+    background-image: linear-gradient(to right, #52f2b2, #094741);
+    background-clip: text; */
+    background: -webkit-linear-gradient(135deg, #7f0000 16%,#40c48f 85%);
     -webkit-background-clip: text;
 }
 .section-container {
