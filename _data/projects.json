@@ -2,7 +2,7 @@
     "This website": {
         "url": "https://github.com/Hattivat/hattivat.github.io",
         "description": "Responsive, and taking full advantage of CSS3 feautures to minimize the use of lower-performance JS code.",
-        "technologies": "HTML5, CSS3, jQuery",
+        "technologies": "HTML5, CSS3, jQuery, Jekyll",
         "image": "./assets/portfolio.png"
     },
     "PAPER": {
@@ -10,6 +10,12 @@
         "description": "A desktop application to automate a repetitive process, written to reduce my team's workload during my time in Security Support. Streamlined GUI with just three buttons.",
         "technologies": "Python, Tkinter, MS Outlook API",
         "image": "./assets/paper.png"
+    },
+    "Hypergolic": {
+        "url": "https://github.com/Hattivat/hypergolic-django/tree/master/hypergolic/catalog",
+        "description": "Django-based backend for a planned website to serve as a database of rocketry-related information",
+        "technologies": "Python, Django, PostgreSQL",
+        "image": "./assets/edytor.png"
     },
     "SICP": {
         "url": "https://github.com/Hattivat/SICP",

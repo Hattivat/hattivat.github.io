@@ -7,20 +7,20 @@
     },
     "Javascript": {
         "Vanilla": 50,
-        "jQuery": 75,
+        "jQuery": 60,
         "Angular": 25,
         "React": 5
     },
     "Front-end": {
         "HTML5": 80,
         "CSS3": 66,
-        "Bootstrap": 50,
+        "Bootstrap": 40,
         "SVG": 10
     },
     "Tools": {
         "Linux": 50,
         "Git": 35,
-        "PowerShell": 20,
+        "PowerShell": 10,
         "SQL": 25
     },
     "Concepts": {
