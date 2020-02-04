@@ -1,32 +1,32 @@
 {
     "Python": {
-        "Standard library": 75,
-        "Django": 35,
-        "Numpy": 20,
+        "Standard library": 80,
+        "Pandas": 50,
+        "REST API frameworks": 50,
         "Tkinter": 10
     },
-    "Javascript": {
-        "Vanilla": 50,
-        "jQuery": 60,
-        "Angular": 25,
-        "React": 5
+    "Big Data": {
+        "Spark": 70,
+        "Kafka": 40,
+        "Hadoop": 40,
+        "Hive": 30
     },
-    "Front-end": {
-        "HTML5": 80,
-        "CSS3": 66,
-        "Bootstrap": 40,
-        "SVG": 10
+    "Databases": {
+        "SQL": 90,
+        "ElasticSearch": 80,
+        "Cassandra / BigQuery": 60,
+        "Redis": 40
     },
     "Tools": {
         "Linux": 50,
-        "Git": 35,
-        "PowerShell": 10,
-        "SQL": 25
+        "Docker": 60,
+        "Kubernetes": 60,
+        "Jenkins": 50
     },
     "Concepts": {
-        "Object-oriented programming": 25,
+        "Object-oriented programming": 50,
         "Functional programming": 40,
-        "MVC": 40,
-        "RWD": 25
+        "Machine learning": 40,
+        "Data mining": 40
     }
 }
